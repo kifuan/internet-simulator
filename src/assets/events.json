@@ -1,0 +1,1347 @@
+[
+  {
+    "id": 1,
+    "text": "中元节到了，但这是中国__节。",
+    "actions": {
+      "text": "继续",
+      "message": "过节了爆金币喵[yum]",
+      "effect": {
+        "money": 5
+      }
+    }
+  },
+  {
+    "id": 2,
+    "text": "一个浑身弱点的空壳怪怕成这样，我想各位在骂策划之前，是否该反思一下自己身为游戏玩家的不称职。",
+    "actions": {
+      "text": "继续",
+      "message": "很符合我对呃呃的想象[rofl]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 3,
+    "text": "玩游戏，尤其是这种氪金需求的养成类游戏，要么白嫖，要么退坑，要么就给我老老实实跪着玩，挺起腰杆子？你在想屁吃。",
+    "actions": {
+      "text": "继续",
+      "message": "别说了我要紫砂了[cry]",
+      "effect": {
+        "mind": -5
+      }
+    }
+  },
+  {
+    "id": 4,
+    "text": "真的，有的时候就很烦，我们班里就我一个玩呃呃的，后来我拉了几个同学入坑，结果那几个同学我发现他们玩纯粹是为了抽卡，来这里霍霍这环境干什么？气死。",
+    "actions": {
+      "text": "继续",
+      "message": "不抽卡就相当于赚到金币了。",
+      "effect": {
+        "money": 5
+      }
+    }
+  },
+  {
+    "id": 5,
+    "text": "Miyoho 在下大棋，打造历史资料库方便将来的人溯源。",
+    "actions": {
+      "text": "继续",
+      "message": "以后史料就是这个辣[rofl]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 6,
+    "text": "据说现在米国搞了个曼哈顿2.0项目，核心机密就是如何复刻某款呃呃游戏，好多妈妈生理工天才少年都去了，米国为了应对文化大冲击，也是煞费苦心。",
+    "actions": {
+      "text": "继续",
+      "message": "害怕喵[fear]",
+      "effect": {
+        "mind": -5
+      }
+    }
+  },
+  {
+    "id": 7,
+    "text": "咋感觉呃呃才是被某些群体碰瓷最多的啊，经验密码属于了，每次单机大作上线都把呃呃拿出来踩一脚，然后在抨击呃呃到处碰瓷是吧。",
+    "actions": {
+      "text": "继续",
+      "message": "错了喵对不起喵[cry]",
+      "effect": {
+        "mind": -5
+      }
+    }
+  },
+  {
+    "id": 8,
+    "text": "有点恨没有米国那种环境，我真想有国外米卫兵的战斗力，这楼里有些东西我真的想端枪到他们家里去教他们做人，但凡跟人沾点边都说不出那些话。",
+    "actions": {
+      "text": "继续",
+      "message": "投降喵[fear]",
+      "effect": {
+        "mind": -5
+      }
+    }
+  },
+  {
+    "id": 9,
+    "text": "Miyoho 制作组里面有蛀虫，难道不是 Ninecent 派来的卧底吗？",
+    "actions": {
+      "text": "继续",
+      "message": "不觉得这很乐吗[rofl]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 10,
+    "text": "看把你们这群孝子给气的，知道塞尔达三年销售额不如呃呃一个月吗？",
+    "actions": {
+      "text": "继续",
+      "message": "销售额好高喵爆金币喵。",
+      "effect": {
+        "money": 5
+      }
+    }
+  },
+  {
+    "id": 11,
+    "text": "我宿舍里就有一个天天主动跳脸的货，不过他从没跳到过我的脸上，即便他知道我玩呃呃而且还挺喜欢玩，也许是因为我每天早上在宿舍楼下练红缨枪吧。",
+    "actions": {
+      "text": "继续",
+      "message": "投降投降投降[fear]",
+      "effect": {
+        "mind": -5
+      }
+    }
+  },
+  {
+    "id": 12,
+    "text": "我家里人是从来不敢摔我的东西，因为他们见过我把他们摔到一个主板都出来的手机给修好了。（在垃圾站或别人手机店门口的垃圾桶里找料板）后来他们把我的电脑和显示器都弄坏了，但最后都被我修好了。后来我妈摔得都不想摔了，因为我都给修好了。本人初二，原因是，我妈以前是看电子产品组装的，所以说我也很感兴趣，结果都学会了。",
+    "actions": {
+      "text": "继续",
+      "message": "有这样一门手艺可以赚不少金币。",
+      "effect": {
+        "money": 10
+      }
+    }
+  },
+  {
+    "id": 13,
+    "text": "你错了，没出呃呃之前，多少人知道开放世界？你觉得是先知道呃呃再知道开放世界，还是先知道开放世界再知道呃呃？大部分人都是前者。",
+    "actions": {
+      "text": "继续",
+      "message": "科技并带着趣味[cool]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 14,
+    "text": "你科目三睡觉创似了龙丽。",
+    "actions": {
+      "text": "继续",
+      "message": "开派对咯[yum]",
+      "effect": {
+        "baseline": -5
+      }
+    }
+  },
+  {
+    "id": 15,
+    "text": "在现在这个浮躁的社会，一个不玩呃呃的人，是活的很失败的，不分男女。",
+    "actions": {
+      "text": "继续",
+      "message": "我太失败了[cry]",
+      "effect": {
+        "mind": -5
+      }
+    }
+  },
+  {
+    "id": 16,
+    "text": "呃呃的质量值得吹上天懂吗？拿奖没少拿，提名也多，国内真正能吹并且能称为3A的游戏有且只有这一个。除了国人，全世界的人都不质疑呃呃的质量可以吹。",
+    "actions": {
+      "text": "继续",
+      "message": "我为祖国的游戏而自豪[cool]",
+      "effect": {
+        "patriotism": 5
+      }
+    }
+  },
+  {
+    "id": 17,
+    "text": "Miyoho 光呃呃一个项目挣得钱都够买下你一个 Nindento 了，你们尽管叫，叫得再狠也改变不了呃呃大于塞尔达的现实。",
+    "actions": {
+      "text": "继续",
+      "message": "比东瀛强，赢了[yum]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 18,
+    "text": "可怜 Miyoho 生在CN，国内玩家真的不配拥有米哈游。",
+    "actions": {
+      "text": "继续",
+      "message": "罕见罕见罕见[rage]",
+      "effect": {
+        "patriotism": -5
+      }
+    }
+  },
+  {
+    "id": 19,
+    "text": "为什么 Miyoho 手机优化这么垃圾？因为是端游；为什么端游多人体验这么差？因为是单机；为什么技术力不如十年前的主机游戏？因为是手游。",
+    "actions": {
+      "text": "继续",
+      "message": "立体防御[yum]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 20,
+    "text": "是这样的，原石作为27个宇宙的通用货币，Miyoho 现在已经直接用原石发工资了，`UID` 已经取代身份证号，商铺中时不时传出“米付宝到账200原石”的播报，全地球都在学丘丘语，不觉得这很酷吗？作为一名旅行者我觉得这太酷了，很符合我对未来生活的想象。科技并带着趣味。",
+    "actions": {
+      "text": "继续",
+      "message": "注册米付宝送了好多金币[yum]",
+      "effect": {
+        "money": 10
+      }
+    }
+  },
+  {
+    "id": 21,
+    "text": "你的素养很差，我现在每天玩呃呃都能赚150原石，每个月差不多5000原石的收入，也就是现实生活中每个月5000美元的收入水平，换算过来最少也30000人民币，虽然我只有14岁，但是已经超越了绝大多数人（包括你）的水平，这便是呃呃给我的骄傲的资本。",
+    "actions": {
+      "text": "继续",
+      "message": "你别说了我好失败[cry]",
+      "effect": {
+        "mind": -5
+      }
+    }
+  },
+  {
+    "id": 22,
+    "text": "鉴于你在互联网上侮辱呃呃玩家，经本院初步审理，你的行为叛国。Miyoho 最高院判处罚金500万拒履行赔款就处于死刑，请你收到本短信本短信后务必尽快履行赔款。不然本院将于明日中午，安排武装直升机对你住所进行轰炸如果你没有履行赔款义务，我们不排除米卫特种部队以暴力形式解决。",
+    "actions": {
+      "text": "继续",
+      "message": "爆出金币了[cry]",
+      "effect": {
+        "money": -5
+      }
+    }
+  },
+  {
+    "id": 23,
+    "text": "米黑们真服了，只会在网上口嗨，有种现实来碰一碰？我虽然只有初二，但一米八二，觉得自己行了的米黑来碰一碰。否则请闭上狗嘴。",
+    "actions": {
+      "text": "继续",
+      "message": "投降喵[fear]",
+      "effect": {
+        "mind": -5
+      }
+    }
+  },
+  {
+    "id": 24,
+    "text": "古语有云：三天不玩，脑袋爆炸；两天不碰，蚂蚁在爬。这就是说游戏要玩就得玩呃呃，那些玩游戏不玩呃呃的人只能说他们只会一味的崇洋媚外而不懂爱国。而如鄙人般的高端人士，却与这种传统背道而驰：玩游戏，就得玩呃呃、玩国产之光！相较于那些不玩呃呃的人，素质整整提高了两个档次。",
+    "actions": {
+      "text": "继续",
+      "message": "这便是呃呃给我的自豪[cool]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 25,
+    "text": "任何事做到极致都是一门艺术，玩游戏，只要你会玩呃呃，呃呃玩得够好，玩得够神。那么，你就是一个地地道道的艺术家，就是英国皇家艺术学院也不能否认你的艺术资质。而那些不玩呃呃的人，只能说他们，完全不懂艺术，只为玩游戏，只为消遣而玩游戏，根本没有把这种行为上升到艺术的高度，这样的人，品味真的很低。",
+    "actions": {
+      "text": "继续",
+      "message": "自豪感油然而生[cool]",
+      "effect": {
+        "mind": 5
+      }
+    }
+  },
+  {
+    "id": 26,
+    "text": "每当鄙人出入各种社交场合如鸡尾酒会等，众人无不纷纷过来敬酒的，而那些玩游戏不玩呃呃的，往往只能一个人缩在角落里自怨自艾。玩游戏，不玩呃呃，那玩什么呢？没错，无非就是鬼泣、塞尔达，血源诅咒；这样不爱国的玩家，素质品味修养真的很低。",
+    "actions": {
+      "text": "继续",
+      "message": "我觉得这就是一种自信[satisfied]",
+      "effect": {
+      }
+    }
+  },
+  {
+    "id": 27,
+    "text": "我爆肝4128小时，还原了1:1呃呃地图，但是不能分享，第一个找我要地图的小伙伴等了一个星期之久，结果就是压缩了百分之零点一，根本压不动。",
+    "actions": {
+      "text": "继续",
+      "message": "这实在是太乐了，很符合我对呃呃的想象[yum]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 28,
+    "text": "从来感觉不到什么爸爸的，小时候被我爸拿拖鞋抽，拿跳绳抽，外面晾衣服的杆子都拿出来了，20cm粗的实心钢管直接",
+    "actions": [
+      {
+        "text": "把我抽断了[cry]",
+        "message": "愤怒喵[rage]",
+        "effect": {
+          "mind": -5,
+          "fun": -5
+        }
+      },
+      {
+        "text": "反杀了[yum]",
+        "message": "魅力时刻[satisfied]",
+        "effect": {
+          "mind": 5,
+          "baseline": -5,
+          "fun": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "千度贴吧上有人发某个游戏角色的呃呃图。",
+    "actions": [
+      {
+        "text": "狠狠地转发[yum]",
+        "message": "被晶哥罚款了喵[cry]",
+        "effect": {
+          "patriotism": -5,
+          "baseline": -5,
+          "mind": 5,
+          "fun": 5
+        }
+      },
+      {
+        "text": "打个交先[yum]",
+        "message": "差不多得了[sweat]",
+        "effect": {
+          "patriotism": -5,
+          "mind": 5,
+          "fun": 5,
+          "baseline": -10
+        }
+      },
+      {
+        "text": "举办[rage]",
+        "message": "正义的[cool]",
+        "effect": {
+          "patriotism": 5,
+          "mind": 5,
+          "fun": -5,
+          "baseline": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "Ninecent 宣布制裁著名爱国公司 Miyoho，对此你？",
+    "actions": [
+      {
+        "text": "开香槟咯[champagne]",
+        "message": "大量香槟花了你不少金币[cry]",
+        "effect": {
+          "patriotism": -5,
+          "money": -10,
+          "mind": 5,
+          "baseline": -5,
+          "fun": 10
+        }
+      },
+      {
+        "text": "Miyoho 是我跌你不准这样[cry]",
+        "message": "[cry]",
+        "effect": {
+          "patriotism": 5,
+          "mind": -5,
+          "fun": -5
+        }
+      },
+      {
+        "text": "好歹我也是个C语言系列大佬[cool]",
+        "message": "你扒出了亡者荣耀的源代码，爆出了金币[yum]",
+        "effect": {
+          "mind": 5,
+          "fun": 5,
+          "money": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "text": "你们这还不算最狠的，我记得我小时候去我朋友家里，他家里有一瓶硫酸，我闻着味道感觉很好闻，就？",
+    "actions": [
+      {
+        "text": "一口干了。",
+        "message": "朋友陪医药费喵开心喵[yum]",
+        "effect": {
+          "mind": 5,
+          "money": 5,
+          "fun": 5
+        }
+      },
+      {
+        "text": "给朋友干了",
+        "message": "给朋友陪医药费，乐不出来了[cry]",
+        "effect": {
+          "mind": -5,
+          "fun": -5,
+          "baseline": -5,
+          "money": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "text": "我有一回半夜插充电头，死活插不上去。最后气急败坏，使劲往墙上怼，然后？",
+    "actions": [
+      {
+        "text": "扎穿了墙，扎到了电线，给我电晕了。",
+        "message": "电晕了睡得就是香。",
+        "effect": {
+          "mind": 5
+        }
+      },
+      {
+        "text": "插头坏了。",
+        "message": "修插头花金币了[cry]",
+        "effect": {
+          "money": -5,
+          "mind": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "text": "我就是现实中比较唯诺吧，上次我上课不听课跟同学聊呃呃正开心，后排有人突然说OP别叫，我当场就？",
+    "actions": [
+      {
+        "text": "一巴掌打掉他两颗门牙。",
+        "message": "虽然赔了医药费，但你捍卫了爱国游戏的尊严[cool]",
+        "effect": {
+          "patriotism": 5,
+          "money": -5,
+          "baseline": -5,
+          "fun": 5
+        }
+      },
+      {
+        "text": "跪下来求他别骂了。",
+        "message": "乐不出来了[cry]",
+        "effect": {
+          "patriotism": 5,
+          "mind": -5,
+          "fun": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "text": "对于游戏里令你印象深刻的细节是？",
+    "actions": [
+      {
+        "text": "椅子是可以坐的。",
+        "message": "魅力时刻[yum]",
+        "effect": {
+          "patriotism": 5,
+          "fun": 5
+        }
+      },
+      {
+        "text": "盘子是可以偷的。",
+        "message": "爆金币咯[yum]",
+        "effect": {
+          "patriotism": 5,
+          "fun": 5,
+          "baseline": -5,
+          "money": 5
+        }
+      },
+      {
+        "text": "硫酸是可以喝的。",
+        "message": "爆出医药费了[cry]",
+        "effect": {
+          "patriotism": 5,
+          "fun": 5,
+          "money": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "text": "提到“好爸爸”，你最先会想起谁？",
+    "actions": [
+      {
+        "text": "立本。",
+        "message": "[rofl]",
+        "effect": {
+          "patriotism": 5,
+          "baseline": -5
+        }
+      },
+      {
+        "text": "我有浮木就不评价了。",
+        "message": "你不爱国[rage]",
+        "effect": {
+          "patriotism": -5,
+          "baseline": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "text": "某游戏的配音演员不经常玩这个游戏。",
+    "actions": [
+      {
+        "text": "不觉得这很忘本吗？",
+        "message": "正确的[satisfied]",
+        "effect": {
+          "patriotism": 5,
+          "baseline": -5,
+          "fun": -5
+        }
+      },
+      {
+        "text": "不评价。",
+        "message": "不反对就是支持，你和罕见有什么区别[rage]",
+        "effect": {
+          "patriotism": -5,
+          "baseline": 5,
+          "fun": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "text": "见识少了看什么都下流，这花纹是严格的敦煌忍冬纹，取自金银花，兴盛于南北朝时期，在敦煌艺术中有很多体现，常与孔雀或禽鸟同时出现。",
+    "actions": {
+      "text": "继续",
+      "message": "我们国家的文化真是太棒了[satisfied]",
+      "effect": {
+        "patriotism": 5
+      }
+    }
+  },
+  {
+    "id": 38,
+    "text": "关于我在呃呃文化扫盲这件事，本理科生没怎么学过历史，为了玩明白呃呃我甚至看了好多历史方面的作品。",
+    "actions": {
+      "text": "继续",
+      "message": "我觉得这就是一种爱国。",
+      "effect": {
+        "patriotism": 5
+      }
+    }
+  },
+  {
+    "id": 39,
+    "text": "你们这些黑子，再敢说一句 Miyoho 不好，我会直接？",
+    "actions": [
+      {
+        "text": "[shark]",
+        "message": "[fear]",
+        "effect": {
+          "patriotism": 10,
+          "baseline": -5,
+          "fun": -5
+        }
+      },
+      {
+        "text": "跪下来求你别说了。",
+        "message": "丑态！",
+        "effect": {
+          "patriotism": 5,
+          "mind": -5,
+          "fun": -5
+        }
+      },
+      {
+        "text": "和你一起说[yum]",
+        "message": "所以是数一数二的罕见[tired]",
+        "effect": {
+          "patriotism": -5,
+          "mind": 5,
+          "fun": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "text": "我来说一件事，我十日前在坐地铁的时候，玩某游戏，被人骂OP，然后我？",
+    "actions": [
+      {
+        "text": "被打了一顿。",
+        "message": "然被打了，但有医药费喵，爆金币咯，耶诶~",
+        "effect": {
+          "patriotism": 5,
+          "mind": -5,
+          "money": 10
+        }
+      },
+      {
+        "text": "打了一顿",
+        "message": "轻伤，被拘留了十日。不过打了之后特爽，那些网上骂我OP的家伙，要不要在现实见个面呢？我会很关照你的。",
+        "effect": {
+          "patriotism": 10,
+          "mind": 5,
+          "baseline": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "text": "三十万美元就可以让你全家**，而这些钱，我？",
+    "actions": [
+      {
+        "text": "一辈子也赚不到[cry]",
+        "message": "诚实的人捏，奖励金币。",
+        "effect": {
+          "mind": -5,
+          "money": 10,
+          "fun": 5
+        }
+      },
+      {
+        "text": "我十年就可以赚到。",
+        "message": "害怕喵[fear]",
+        "effect": {
+          "mind": 5,
+          "baseline": -5,
+          "fun": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "text": "如果呃呃全是原创的话，Miyoho 就是一个名垂青史的手游公司。可惜中国的手游环境容不下，也发展不起来。买个IP随便做做就能赚钱了，何必辛辛苦苦做原创呢？到时候喷你使用的汉字抄袭新华字典，何苦来哉。",
+    "actions": {
+      "text": "继续",
+      "message": "现在你看到的文字也抄袭了新华字典[cry]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 43,
+    "text": "我 Steam 700+，NS，PS4，XBOX都有，我觉得呃呃是个好游戏，你游戏阅历有我多吗？要不要加个Steam比划比划？",
+    "actions": [
+      {
+        "text": "加下好友喵。",
+        "message": "还是别加了，我有你这种针对手游整天喷来喷去的优越狗我都觉得丢脸。",
+        "effect": {
+          "mind": 5,
+          "fun": 5
+        }
+      },
+      {
+        "text": "投降喵。",
+        "message": "丑态！",
+        "effect": {
+          "mind": -5,
+          "fun": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "text": "据米国史料记载，光绪曾和 Nindento 创始人玩呃呃，光绪抽光了自己的小金库也没出金光，而山内一个十连就出了。但山内在推特上晒卡分享，而光绪没有点赞，是因为他氪金抽卡被慈禧发现了导致手机被没收。",
+    "actions": {
+      "text": "哦。",
+      "message": "不觉得这很酷吗[cool]",
+      "effect": {
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 45,
+    "text": "毫无疑问，Miyoho 的开发，对手机厂商带来了巨大的压力。手机厂商会被迫开发性能更高的手机。",
+    "actions": {
+      "text": "好的。",
+      "message": "事实正是如此，HUAMEI + 8G 薄纱 9G，我觉得这就是一种自信。",
+      "effect": {
+        "patriotism": 5
+      }
+    }
+  },
+  {
+    "id": 46,
+    "text": "对于东瀛人的游戏可以玩盗版。",
+    "actions": {
+      "text": "支持。",
+      "message": "这就是文化自信。",
+      "effect": {
+        "patriotism": 5
+      }
+    }
+  },
+  {
+    "id": 47,
+    "text": "Miyoho 光呃呃一个项目挣得钱都够买下你一个 Nindento 了，你们尽管叫，叫得再狠也改变不了呃呃大于塞尔达的现实。",
+    "actions": {
+      "text": "支持。",
+      "message": "支持我们自己的游戏！",
+      "effect": {
+        "patriotism": 5
+      }
+    }
+  },
+  {
+    "id": 48,
+    "text": "喷子连魔改 Unity 和虚拟引擎都分不清，还要卖弄那些知识也是麻烦你了。",
+    "actions": {
+      "text": "不是虚幻吗？",
+      "message": "你是不是看不起我们V？",
+      "effect": {
+        "patriotism": -5,
+        "fun": 5
+      }
+    }
+  },
+  {
+    "id": 49,
+    "text": "Miyoho 靠抄袭把小众做成了大众，侧面证明了 Capcorn 的无能。",
+    "actions": {
+      "text": "你说得对。",
+      "message": "事实正是如此。",
+      "effect": {
+        "patriotism": 5
+      }
+    }
+  },
+  {
+    "id": 50,
+    "text": "如果葬礼上没有米哈游配乐，你会？",
+    "actions": [
+      {
+        "text": "安心喵。",
+        "message": "不爱国的人，请划走[rag]",
+        "effect": {
+          "patriotism": -5,
+          "fun": 5
+        }
+      },
+      {
+        "text": "爬出来把不放的人带走。",
+        "message": "这是否有点[sweat]",
+        "effect": {
+          "patriotism": 5,
+          "baseline": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "text": "某游戏宣布与必输客联动，你？",
+    "actions": [
+      {
+        "text": "盘子真是太好偷辣[yum]",
+        "message": "注意你的米线[rage]",
+        "effect": {
+          "money": 10,
+          "fun": 5,
+          "baseline": -5
+        }
+      },
+      {
+        "text": "给某角色磕了[tired]",
+        "message": "丑态！",
+        "effect": {
+          "patriotism": 5,
+          "mind": 5,
+          "fun": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "text": "偷偷拿秦妈钱氪了648，你就防沉迷，本来还想等重置之后再氪一笔的。",
+    "actions": {
+      "text": "呃呃。",
+      "message": "虽然金币少了，但是更爱国了。",
+      "effect": {
+        "patriotism": 5,
+        "money": -5
+      }
+    }
+  },
+  {
+    "id": 53,
+    "text": "你看到了某知名游戏尚未公布角色的二创，你会？",
+    "actions": [
+      {
+        "text": "举办画师[rage]",
+        "message": "米线！",
+        "effect": {
+          "patriotism": 10,
+          "mind": -5,
+          "baseline": -5,
+          "fun": -5
+        }
+      },
+      {
+        "text": "打个交先[yum]",
+        "message": "GN真下头[tired]",
+        "effect": {
+          "patriotism": -5,
+          "mind": 5,
+          "fun": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "text": "你推的V宣布了和榜一出游。",
+    "actions": [
+      {
+        "text": "怎么不是我怎么不是我[tired]",
+        "message": "管人痴差不多得了[sweat]",
+        "effect": {
+          "fun": -5,
+          "mind": -5
+        }
+      },
+      {
+        "text": "反转了，我是榜一[cool]",
+        "message": "富哥威武士[heart]",
+        "effect": {
+          "fun": -5,
+          "money": -10,
+          "mind": 10
+        }
+      },
+      {
+        "text": "切割了[yum]",
+        "message": "[yum]",
+        "effect": {
+          "fun": 5,
+          "mind": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "text": "某知名爱国V近日换了新皮。",
+    "actions": [
+      {
+        "text": "任何邪恶终将绳之以法！",
+        "message": "分不清什么是邪恶是吧[sweat]",
+        "effect": {
+          "patriotism": -5,
+          "fun": 5,
+          "mind": 5
+        }
+      },
+      {
+        "text": "憋不住了打个SC[heart]",
+        "message": "然而你只能打蓝色SC，令人感叹。",
+        "effect": {
+          "patriotism": 5,
+          "mind": 5,
+          "money": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "text": "哇哇哇哇！！！上大分了[dance]happy",
+    "actions": [
+      {
+        "text": "可爱捏。",
+        "message": "结晶喵。",
+        "effect": {
+          "fun": -5,
+          "mind": 5
+        }
+      },
+      {
+        "text": "感觉不如。。。",
+        "message": "我知道你要介绍什么游戏。",
+        "effect": {
+          "fun": 5,
+          "patriotism": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "text": "你给最喜欢看的V切了202个切片，却被正义切割。",
+    "actions": [
+      {
+        "text": "开香槟咯[champagne]",
+        "message": "切割切割[yum]",
+        "effect": {
+          "mind": 5,
+          "fun": 5
+        }
+      },
+      {
+        "text": "开小号继续刷SC[tired]",
+        "message": "然后又被拉黑了[yum]",
+        "effect": {
+          "fun": -10,
+          "mind": -5,
+          "money": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "text": "今天是你最喜欢的V的毕业回。",
+    "actions": [
+      {
+        "text": "狠狠地陪酒[wine]",
+        "message": "陪酒女怎么你了？",
+        "effect": {
+          "fun": 5,
+          "mind": 5,
+          "baseline": -5
+        }
+      },
+      {
+        "text": "发红色SC挽留[cry]",
+        "message": "然而发了也留不住[cry]",
+        "effect": {
+          "fun": -5,
+          "money": -10,
+          "mind": -5
+        }
+      },
+      {
+        "text": "紫砂了[cry]",
+        "message": "然而想到今天的委托还没做，你停止了紫砂，回到家中打开HUAMEI手机开始玩某游戏了。",
+        "effect": {
+          "fun": -5,
+          "mind": -10
+        }
+      },
+      {
+        "text": "开启何冬天[angel]",
+        "message": "何怎么你了？",
+        "effect": {
+          "fun": 5,
+          "baseline": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "text": "你推的箱刚进行完N期生初配信 ，你单推了其中一个V，没想到她已经有小男友了，并且还在小蓝鸟上发表各种H言论，面临着毕业风波。",
+    "actions": [
+      {
+        "text": "关我屁事，刚看没120分钟，乐[rofl]",
+        "message": "[yum]",
+        "effect": {
+          "fun": 5,
+          "mind": 5
+        }
+      },
+      {
+        "text": "你怎么能这么对待gachi粉，我要加入炎上阵营[rage]",
+        "message": "愤怒愤怒愤怒[rage]",
+        "effect": {
+          "fun": -5,
+          "mind": -5,
+          "baseline": 5
+        }
+      },
+      {
+        "text": "我才不管中之人之前怎么样，我爱的是这个皮[tired]",
+        "message": "结晶喵[yum]",
+        "effect": {
+          "fun": -5,
+          "mind": 5,
+          "money": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "text": "你推的V在 Youdube 直播展示观众数据时踩了呃呃红线。",
+    "actions": [
+      {
+        "text": "我将化身铁血兔友，独轮车刷起来[rage]",
+        "message": "我觉得这就是一种爱国。",
+        "effect": {
+          "patriotism": 5,
+          "baseline": 5,
+          "mind": -5
+        }
+      },
+      {
+        "text": "有没有一种可能，是谷狗的锅[think]",
+        "message": "罕见[rage]",
+        "effect": {
+          "patriotism": -5,
+          "baseline": -5,
+          "mind": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "text": "当你听到 Take over 时，你会？",
+    "actions": [
+      {
+        "text": "Take over入坑，从此茶饭不思[cry]",
+        "message": "[cry]",
+        "effect": {
+          "mind": -5,
+          "money": -5
+        }
+      },
+      {
+        "text": "LPL的三连冠啊[cry]",
+        "message": "[cry]",
+        "effect": {
+          "mind": -5
+        }
+      },
+      {
+        "text": "369塞恩反向大招用命留住天肥寒冰，阿bin剑姬五杀，船长地火炸g2双C",
+        "message": "[cool]",
+        "effect": {
+          "mind": 5,
+          "patriotism": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "text": "你之前推过的远在海的对岸的V因为被发现有小男友被gachi粉冲烂，并且被公司因泄露机密为由开除，而这些都在你不知道的情况下发生。",
+    "actions": [
+      {
+        "text": "呃呃，过去的都过去了，你几把谁啊[sweat]",
+        "message": "不入脑的，支持的[yum]",
+        "effect": {
+          "fun": 5,
+          "mind": 5
+        }
+      },
+      {
+        "text": "我不相信，我不相信！可恶的呃呃呃呃啊啊啊！",
+        "message": "入脑的，结晶的[sweat]",
+        "effect": {
+          "fun": -5,
+          "mind": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "text": "你喜欢的v将近半年以生病为由就播了几次。",
+    "actions": [
+      {
+        "text": "理解，大家都是普通人，好好休息呀[angel]",
+        "message": "于是你狠狠地刷SC想让她多直播[tired]",
+        "effect": {
+          "baseline": 5,
+          "money": -5,
+          "fun": -5,
+          "mind": 5
+        }
+      },
+      {
+        "text": "吗的肯定是找小男友玩去了，rp的有一手，切割[rage]",
+        "message": "攻击性[yum]",
+        "effect": {
+          "mind": -5,
+          "fun": 5,
+          "baseline": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "text": "当你发现你推的混沌系v竟然真去找了牛郎时，你会？",
+    "actions": [
+      {
+        "text": "她自己的自由，我管不着[cry]",
+        "message": "然后继续狠狠地爆米[tired]",
+        "effect": {
+          "fun": -5,
+          "mind": -5,
+          "money": -5
+        }
+      },
+      {
+        "text": "吗的让你去你还真去，切割了[tired]",
+        "message": "正确的[yum]",
+        "effect": {
+          "fun": 5,
+          "mind": 5
+        }
+      },
+      {
+        "text": "我的O很大，为什么不找我[rage]",
+        "message": "欧阳老师怎么你了？",
+        "effect": {
+          "fun": 10,
+          "mind": 5,
+          "baseline": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "text": "某v在开播前在蓝鸟上发出了自己穿的内衣。",
+    "actions": [
+      {
+        "text": "没活了是吧，任何三俗终将绳之以法[rage]",
+        "message": "鉴定为戒色吧8u[yum]",
+        "effect": {
+          "fun": 5,
+          "baseline": 5
+        }
+      },
+      {
+        "text": "给我舔舔[heart]",
+        "message": "GN真的是[tired]",
+        "effect": {
+          "fun": 10,
+          "baseline": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "text": "当你发现你推的v迟迟不来批限，并且在妮可妮可上点赞一个缝合批里啪啦二创视频的视频，并曾声称不喜欢这种人设。",
+    "actions": [
+      {
+        "text": "有没有可能，这只是误会？[think]",
+        "message": "[sweat]",
+        "effect": {
+          "fun": -5,
+          "mind": 5
+        }
+      },
+      {
+        "text": "吗的，忍不了了，炎上开始！[rage]",
+        "message": "急急急。",
+        "effect": {
+          "fun": 5,
+          "mind": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "text": "某自认为将成为世界第一箱的公司，疑似用呃呃红线跳皮筋。字幕组们悲痛万分，决定删视频以表立场，结果没想到都是在本人同意后删的。",
+    "actions": [
+      {
+        "text": "任何邪恶终将绳之以法[rage]",
+        "message": "爱国的[yum]",
+        "effect": {
+          "patriotism": 5,
+          "baseline": 5
+        }
+      },
+      {
+        "text": "不！我的爱人！我的温暖的大家庭！我不能接受！[cry]",
+        "message": "稀有的[tired]",
+        "effect": {
+          "patriotism": -5,
+          "mind": -5,
+          "fun": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "text": "你曾经入脑单推的一个比较亲中的v在三笠公园战舰上开live，你会？",
+    "actions": [
+      {
+        "text": "Ruler，不管你是谁，尺子就是尺子[rage]",
+        "message": "爱国的[yum]",
+        "effect": {
+          "patriotism": 5,
+          "fun": 5
+        }
+      },
+      {
+        "text": "一定不是她自愿的[tired]",
+        "message": "稀有的[yum]",
+        "effect": {
+          "patriotism": -5,
+          "fun": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "text": "HUAMEI Wate 4128 新品上市，8G + Hemoney OS 爆杀 9G。",
+    "actions": [
+      {
+        "text": "感觉不如水果 18 Pro Max。",
+        "message": "但是水果太贵了[cry]",
+        "effect": {
+          "patriotism": -5,
+          "fun": 5,
+          "mind": 5,
+          "money": -10
+        }
+      },
+      {
+        "text": "不是 HUAMEI 我不买！",
+        "message": "[yum]",
+        "effect": {
+          "patriotism": 5,
+          "fun": -5,
+          "money": -5,
+          "mind": 5
+        }
+      },
+      {
+        "text": "无所谓，我继续用 WIFI 破坏者大米111。",
+        "message": "没金币了[tired]",
+        "effect": {
+          "patriotism": 5,
+          "mind": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "text": "传统派工作室入驻Pilipili，这是对维新派的挑战。",
+    "actions": [
+      {
+        "text": "竖起****他算个**。",
+        "message": "你的素养很差[tired]",
+        "effect": {
+          "fun": 5,
+          "baseline": -5
+        }
+      },
+      {
+        "text": "1！5！",
+        "message": "但是没有水果味咽弹了[cry]",
+        "effect": {
+          "fun": 5,
+          "baseline": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "text": "藏獒锐评小红车感觉不如勤设计。",
+    "actions": [
+      {
+        "text": "早该风沙了。",
+        "message": "[rofl]",
+        "effect": {
+          "patriotism": 5,
+          "fun": -5,
+          "baseline": -5
+        }
+      },
+      {
+        "text": "晚餐。",
+        "message": "不支持锅铲软件是吧[sweat]",
+        "effect": {
+          "fun": -5,
+          "patriotism": -5
+        }
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "text": "你在狗熊联盟是最强王者，输了局排位，很不服气，发现你的延迟是35ms,而对面是22ms，你会？",
+    "actions": [
+      {
+        "text": "对面延迟比我们低，是网络的原因，我要再和你们打一局！",
+        "message": "[yum]",
+        "effect": {
+          "fun": 5,
+          "mind": -5
+        }
+      },
+      {
+        "text": "失败才是人生的主旋律，成功只是一时的，罢了。",
+        "message": "正能量的捏[yum]",
+        "effect": {
+          "fun": -5,
+          "mind": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "text": "假如你在s22打到了四强，你会？",
+    "actions": [
+      {
+        "text": "打入四强就算成功。",
+        "message": "签大合同咯[yum]",
+        "effect": {
+          "money": 10,
+          "mind": 5,
+          "fun": 5,
+          "baseline": -5
+        }
+      },
+      {
+        "text": "如今冠军就在眼前，我必须考虑这是否是我此生仅有的机会。",
+        "message": "不签大合同了[cry]",
+        "effect": {
+          "patriotism": 5,
+          "money": 5,
+          "fun": -5
+        }
+      }
+    ]
+  }
+]
