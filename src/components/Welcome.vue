@@ -5,18 +5,18 @@ const emits = defineEmits<{
 </script>
 
 <template>
-  <div class="text-slate-800 space-y-6 flex flex-col">
-    <h1 class="text-5xl font-semibold">
+  <div class="tw-text-slate-800 tw-space-y-6 tw-flex tw-flex-col">
+    <h1 class="tw-text-5xl tw-font-semibold">
       互联网模拟器
     </h1>
 
-    <p class="text-2xl font-medium">
+    <p class="tw-text-2xl tw-font-medium">
       我真的是太潮辣
     </p>
 
-    <div class="pt-14" />
+    <div class="tw-pt-14" />
 
-    <QBtn color="white" text-color="black" class="text-xl m-0 md:m-32" @click="emits('close')">
+    <QBtn color="white" text-color="black" class="tw-text-xl tw-m-12 md:tw-m-32" @click="emits('close')">
       开始发电
     </QBtn>
   </div>

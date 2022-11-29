@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-    @apply bg-zinc-900 text-center;
+    @apply tw-bg-zinc-900 tw-text-center;
 }
 
 html, body, #app {
-    @apply h-full;
+    @apply tw-h-full;
 }
