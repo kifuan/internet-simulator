@@ -2,11 +2,13 @@ lockfileVersion: 5.4
 
 specifiers:
   '@antfu/eslint-config': ^0.31.0
+  '@quasar/vite-plugin': ^1.2.3
   '@vitejs/plugin-vue': ^3.2.0
   autoprefixer: ^10.4.13
   eslint: ^8.28.0
   pinia: ^2.0.27
   postcss: ^8.4.19
+  quasar: ^2.10.2
   tailwindcss: ^3.2.4
   typescript: ^4.6.4
   vite: ^3.2.3
@@ -15,10 +17,12 @@ specifiers:
 
 dependencies:
   pinia: 2.0.27_mgnvym7yiazkylwwogi5r767ue
+  quasar: 2.10.2
   vue: 3.2.45
 
 devDependencies:
   '@antfu/eslint-config': 0.31.0_hsf322ms6xhhd4b5ne6lb74y4a
+  '@quasar/vite-plugin': 1.2.3_jampads7wbg4vnfhq3ojqhnz54
   '@vitejs/plugin-vue': 3.2.0_vite@3.2.4+vue@3.2.45
   autoprefixer: 10.4.13_postcss@8.4.19
   eslint: 8.28.0
@@ -232,6 +236,21 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@quasar/vite-plugin/1.2.3_jampads7wbg4vnfhq3ojqhnz54:
+    resolution: {integrity: sha512-ErSyY3cHz40GBIQUmqSI8OzzshJM5pLq33Yq3NEtYdWYh1NuIc4C766xkatUdxvhX9sLNnQQZax2ysJ5u7kUJA==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      '@vitejs/plugin-vue': ^2.0.0 || ^3.0.0
+      quasar: ^2.8.0
+      vite: ^2.0.0 || ^3.0.0
+      vue: ^3.0.0
+    dependencies:
+      '@vitejs/plugin-vue': 3.2.0_vite@3.2.4+vue@3.2.45
+      quasar: 2.10.2
+      vite: 3.2.4
+      vue: 3.2.45
     dev: true
 
   /@types/json-schema/7.0.11:
@@ -2449,6 +2468,10 @@ packages:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
     engines: {node: '>=6'}
     dev: true
+
+  /quasar/2.10.2:
+    resolution: {integrity: sha512-y6suu0f2hJKrnFPHzx+p2EBVGzDF6xHaqYGkDIsMNkhxsrO9Qi2+dZCjq1J6+48EJiqPEOn8t9X/gT7yLSSnLw==}
+    engines: {node: '>= 10.18.1', npm: '>= 6.13.4', yarn: '>= 1.21.1'}
 
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}

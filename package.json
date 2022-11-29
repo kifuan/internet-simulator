@@ -1,5 +1,5 @@
 {
-  "name": "abstract-life-simulator",
+  "name": "internet-simulator",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "pinia": "^2.0.27",
+    "quasar": "^2.10.2",
     "vue": "^3.2.41"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.31.0",
+    "@quasar/vite-plugin": "^1.2.3",
     "@vitejs/plugin-vue": "^3.2.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.28.0",
