@@ -26,7 +26,7 @@ export interface TimelineItem {
 
 export const useEventStore = defineStore('event', {
   state: () => ({
-    timeline: [] as TimelineItem[],
+    timelineItems: [] as TimelineItem[],
     currentEvent: {
       id: -1,
       text: 'Event text',
@@ -54,7 +54,7 @@ export const useEventStore = defineStore('event', {
         return `${desc} ${val}`
       })
 
-      this.timeline.push({
+      this.timelineItems.push({
         dateText: this.date.format('YY/MM/DD'),
         eventText: this.currentEvent.text,
         actionText: action.text,

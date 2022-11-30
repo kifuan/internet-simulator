@@ -24,7 +24,7 @@ onMounted(async () => {
     </QTimelineEntry>
 
     <EventTimelineItem
-      v-for="(item, index) in store.timeline"
+      v-for="(item, index) in store.timelineItems"
       :key="index"
       :item="item"
     />
