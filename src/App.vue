@@ -9,18 +9,18 @@ const welcomeClosed = ref(false)
 
 <template>
   <NConfigProvider :locale="zhCN" :date-locale="dateZhCN" preflight-style-disabled>
-    <NDialogProvider>
+    <NMessageProvider>
       <div>
         <Game v-if="welcomeClosed" />
         <Welcome v-else @close="welcomeClosed = true" />
       </div>
-    </NDialogProvider>
+    </NMessageProvider>
   </NConfigProvider>
 </template>
 
 <style scoped>
 div {
   margin: 0 auto;
-  @apply tw-pt-12 tw-p-4 tw-max-w-2xl;
+  @apply tw-pt-16 tw-p-4 tw-max-w-2xl;
 }
 </style>

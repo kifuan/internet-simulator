@@ -8,9 +8,19 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Game: typeof import('./src/components/Game.vue')['default']
+    HistoryEvents: typeof import('./src/components/HistoryEvents.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
     NConfigProvider: typeof import('naive-ui')['NConfigProvider']
     NDialogProvider: typeof import('naive-ui')['NDialogProvider']
+    NH1: typeof import('naive-ui')['NH1']
+    NH3: typeof import('naive-ui')['NH3']
+    NList: typeof import('naive-ui')['NList']
+    NListItem: typeof import('naive-ui')['NListItem']
+    NMessageProvider: typeof import('naive-ui')['NMessageProvider']
+    NP: typeof import('naive-ui')['NP']
+    NSpace: typeof import('naive-ui')['NSpace']
+    NText: typeof import('naive-ui')['NText']
+    NThing: typeof import('naive-ui')['NThing']
     Welcome: typeof import('./src/components/Welcome.vue')['default']
   }
 }
