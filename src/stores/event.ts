@@ -1,3 +1,4 @@
+import dayjs from 'dayjs'
 import { defineStore } from 'pinia'
 import events from '../assets/events.json'
 import type { Property } from './property'
@@ -16,10 +17,14 @@ export interface Action {
 }
 
 export interface HistoryEvent {
+  dateText: string
   eventText: string
   actionText: string
   actionMessage: string
-  actionEffectMessages: string[]
+  actionEffects: {
+    text: string
+    value: number
+  }[]
 }
 
 export const useEventStore = defineStore('event', {
@@ -31,6 +36,7 @@ export const useEventStore = defineStore('event', {
       text: 'Event text',
       actions: [],
     } as Event,
+    rawDate: dayjs(),
   }),
   actions: {
     chooseEvent(): Event {
@@ -45,20 +51,33 @@ export const useEventStore = defineStore('event', {
     },
 
     pushTimeline(action: Action): HistoryEvent {
-      const actionEffectMessages = Object.entries(action.effect).map(([property, effect]) => {
+      const actionEffects = Object.entries(action.effect).map(([property, effect]) => {
         const desc = propertyDescriptions[property as keyof Property]
         const val: string = effect > 0 ? `+${effect}` : `${effect}`
-        return `${desc} ${val}`
-      })
+        return {
+          text: `${desc} ${val}`,
+          value: effect,
+        }
+      }).sort((e1, e2) => e2.value - e1.value)
 
       const event: HistoryEvent = {
+        dateText: this.date,
         eventText: this.currentEvent.text,
         actionText: action.text,
         actionMessage: action.message,
-        actionEffectMessages,
+        actionEffects,
       }
+
       this.historyEvents.push(event)
+      this.rawDate = this.rawDate.add(Math.floor(Math.random() * 30 + 1), 'day')
+
       return event
+    },
+  },
+
+  getters: {
+    date(): string {
+      return this.rawDate.format('YYYY/MM/DD')
     },
   },
 })

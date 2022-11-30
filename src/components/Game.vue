@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { useEventStore } from '../stores/event'
-import HistoryEvents from './HistoryEvents.vue'
+import HistoryEventList from './HistoryEventList.vue'
 
 const store = useEventStore()
 onMounted(async () => {
@@ -14,5 +14,5 @@ onMounted(async () => {
 </script>
 
 <template>
-  <HistoryEvents />
+  <HistoryEventList />
 </template>

@@ -4,6 +4,7 @@ specifiers:
   '@antfu/eslint-config': ^0.31.0
   '@vitejs/plugin-vue': ^3.2.0
   autoprefixer: ^10.4.13
+  dayjs: ^1.11.6
   eslint: ^8.28.0
   naive-ui: ^2.34.2
   pinia: ^2.0.27
@@ -16,6 +17,7 @@ specifiers:
   vue-tsc: ^1.0.9
 
 dependencies:
+  dayjs: 1.11.6
   naive-ui: 2.34.2_vue@3.2.45
   pinia: 2.0.27_mgnvym7yiazkylwwogi5r767ue
   vue: 3.2.45
@@ -906,6 +908,10 @@ packages:
   /date-fns/2.29.3:
     resolution: {integrity: sha512-dDCnyH2WnnKusqvZZ6+jA1O51Ibt8ZMRNkDZdyAyK4YfbDwa/cEmuztzG5pk6hqlp9aSBPYcjOlktquahGwGeA==}
     engines: {node: '>=0.11'}
+    dev: false
+
+  /dayjs/1.11.6:
+    resolution: {integrity: sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==}
     dev: false
 
   /de-indent/1.0.2:

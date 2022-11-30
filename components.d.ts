@@ -8,7 +8,9 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Game: typeof import('./src/components/Game.vue')['default']
-    HistoryEvents: typeof import('./src/components/HistoryEvents.vue')['default']
+    HistoryEventList: typeof import('./src/components/HistoryEventList.vue')['default']
+    HistoryEventListItem: typeof import('./src/components/HistoryEventListItem.vue')['default']
+    HistoryEvents: typeof import('./src/components/HistoryEventList.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
     NConfigProvider: typeof import('naive-ui')['NConfigProvider']
     NDialogProvider: typeof import('naive-ui')['NDialogProvider']
@@ -19,6 +21,7 @@ declare module '@vue/runtime-core' {
     NMessageProvider: typeof import('naive-ui')['NMessageProvider']
     NP: typeof import('naive-ui')['NP']
     NSpace: typeof import('naive-ui')['NSpace']
+    NTag: typeof import('naive-ui')['NTag']
     NText: typeof import('naive-ui')['NText']
     NThing: typeof import('naive-ui')['NThing']
     Welcome: typeof import('./src/components/Welcome.vue')['default']
