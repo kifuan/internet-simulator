@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { NButton } from 'naive-ui'
-
 const emits = defineEmits<{
   (e: 'close'): void
 }>()

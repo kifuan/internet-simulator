@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NConfigProvider, NDialogProvider, dateZhCN, zhCN } from 'naive-ui'
+import { dateZhCN, zhCN } from 'naive-ui'
 import { ref } from 'vue'
 import Welcome from './components/Welcome.vue'
 import Game from './components/Game.vue'

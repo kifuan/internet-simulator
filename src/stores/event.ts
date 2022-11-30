@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import dayjs from 'dayjs'
 import events from '../assets/events.json'
 import type { Property } from './property'
 import { propertyDescriptions } from './property'
@@ -16,8 +15,7 @@ export interface Action {
   effect: Partial<Property>
 }
 
-export interface TimelineItem {
-  dateText: string
+export interface HistoryEvent {
   eventText: string
   actionText: string
   actionMessage: string
@@ -26,55 +24,41 @@ export interface TimelineItem {
 
 export const useEventStore = defineStore('event', {
   state: () => ({
-    timelineItems: [] as TimelineItem[],
+    historyEvents: [] as HistoryEvent[],
+    historyIds: new Set<number>(),
     currentEvent: {
       id: -1,
       text: 'Event text',
       actions: [],
     } as Event,
-    chosenIds: new Set<number>(),
-    rawDate: dayjs(),
   }),
   actions: {
     chooseEvent(): Event {
-      const eventsArr = events.filter(e => !this.chosenIds.has(e.id))
+      const eventsArr = events.filter(e => !this.historyIds.has(e.id))
       const event = eventsArr[Math.floor(Math.random() * eventsArr.length)]
 
       // Record it to the store.
       this.currentEvent = event
-      this.chosenIds.add(event.id)
+      this.historyIds.add(event.id)
 
       return event
     },
 
-    pushTimeline(action: Action): TimelineItem {
+    pushTimeline(action: Action): HistoryEvent {
       const actionEffectMessages = Object.entries(action.effect).map(([property, effect]) => {
         const desc = propertyDescriptions[property as keyof Property]
         const val: string = effect > 0 ? `+${effect}` : `${effect}`
         return `${desc} ${val}`
       })
 
-      const item: TimelineItem = {
-        dateText: this.date,
+      const event: HistoryEvent = {
         eventText: this.currentEvent.text,
         actionText: action.text,
         actionMessage: action.message,
         actionEffectMessages,
       }
-
-      this.timelineItems.push(item)
-
-      // The date will be used for next item.
-      const days = Math.floor(Math.random() * 30 + 1)
-      this.rawDate = this.rawDate.add(days, 'day')
-
-      return item
-    },
-  },
-
-  getters: {
-    date(): string {
-      return this.rawDate.format('YY/MM/DD')
+      this.historyEvents.push(event)
+      return event
     },
   },
 })
