@@ -1,18 +1,10 @@
 <script setup lang="ts">
 import { QTimelineEntry } from 'quasar'
-import { onMounted } from 'vue'
 import { useEventStore } from '../stores/event'
-import EventTimelineItem from './TimelineEntry.vue'
+import TimelineEntry from './TimelineEntry.vue'
+import TimelineInteractiveEntry from './TimelineInteractiveEntry.vue'
 
 const store = useEventStore()
-
-onMounted(async () => {
-  for (let i = 0; i < 10; i++) {
-    const action = store.chooseEvent().actions[0]
-    store.pushTimeline(action)
-    await new Promise(resolve => setTimeout(resolve, 500))
-  }
-})
 </script>
 
 <template>
@@ -23,10 +15,12 @@ onMounted(async () => {
       </h1>
     </QTimelineEntry>
 
-    <EventTimelineItem
+    <TimelineEntry
       v-for="(item, index) in store.timelineItems"
       :key="index"
       :item="item"
     />
+
+    <TimelineInteractiveEntry />
   </QTimeline>
 </template>
