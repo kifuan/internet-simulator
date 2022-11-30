@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import dayjs from 'dayjs'
 import events from '../assets/events.json'
 import type { Property } from './property'
 import { propertyDescriptions } from './property'
@@ -6,7 +7,7 @@ import { propertyDescriptions } from './property'
 export interface Event {
   id: number
   text: string
-  actions: Action[] | Action
+  actions: Action[]
 }
 
 export interface Action {
@@ -16,6 +17,7 @@ export interface Action {
 }
 
 export interface TimelineItem {
+  dateText: string
   eventText: string
   actionText: string
   actionMessage: string
@@ -31,6 +33,7 @@ export const useEventStore = defineStore('event', {
       actions: [],
     } as Event,
     chosenIds: new Set<number>(),
+    date: dayjs(),
   }),
   actions: {
     chooseEvent(): Event {
@@ -51,7 +54,11 @@ export const useEventStore = defineStore('event', {
         return `${desc} ${val}`
       })
 
+      const days = Math.floor(Math.random() * 30 + 1)
+      this.date = this.date.add(days, 'day')
+
       this.timeline.push({
+        dateText: this.date.format('YY/MM/DD'),
         eventText: this.currentEvent.text,
         actionText: action.text,
         actionMessage: action.message,
