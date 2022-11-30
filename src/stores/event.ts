@@ -54,9 +54,6 @@ export const useEventStore = defineStore('event', {
         return `${desc} ${val}`
       })
 
-      const days = Math.floor(Math.random() * 30 + 1)
-      this.date = this.date.add(days, 'day')
-
       this.timeline.push({
         dateText: this.date.format('YY/MM/DD'),
         eventText: this.currentEvent.text,
@@ -64,6 +61,10 @@ export const useEventStore = defineStore('event', {
         actionMessage: action.message,
         actionEffectMessages,
       })
+
+      // The date will be used for next item.
+      const days = Math.floor(Math.random() * 30 + 1)
+      this.date = this.date.add(days, 'day')
     },
   },
 })
