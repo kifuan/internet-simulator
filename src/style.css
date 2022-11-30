@@ -3,9 +3,5 @@
 @tailwind utilities;
 
 body {
-    @apply tw-bg-zinc-900;
-}
-
-html, body, #app {
-    @apply tw-h-full;
+    @apply tw-bg-zinc-100;
 }

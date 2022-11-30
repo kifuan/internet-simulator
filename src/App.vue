@@ -16,6 +16,6 @@ const welcomeClosed = ref(false)
 <style scoped>
 div {
   margin: 0 auto;
-  @apply tw-bg-zinc-100 tw-pt-24 tw-h-full tw-p-6 tw-max-w-2xl;
+  @apply tw-pt-24 tw-p-6 tw-max-w-2xl;
 }
 </style>

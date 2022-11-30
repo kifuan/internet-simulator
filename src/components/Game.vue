@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import EventTimeline from './EventTimeline.vue'
+import Timeline from './Timeline.vue'
 </script>
 
 <template>
-  <EventTimeline />
+  <Timeline />
 </template>
