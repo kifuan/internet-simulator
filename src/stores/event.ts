@@ -33,7 +33,7 @@ export const useEventStore = defineStore('event', {
       actions: [],
     } as Event,
     chosenIds: new Set<number>(),
-    date: dayjs(),
+    rawDate: dayjs(),
   }),
   actions: {
     chooseEvent(): Event {
@@ -50,12 +50,12 @@ export const useEventStore = defineStore('event', {
     pushTimeline(action: Action) {
       const actionEffectMessages = Object.entries(action.effect).map(([property, effect]) => {
         const desc = propertyDescriptions[property as keyof Property]
-        const val = effect > 0 ? `+${effect}` : `${effect}`
+        const val: string = effect > 0 ? `+${effect}` : `${effect}`
         return `${desc} ${val}`
       })
 
       this.timelineItems.push({
-        dateText: this.date.format('YY/MM/DD'),
+        dateText: this.date,
         eventText: this.currentEvent.text,
         actionText: action.text,
         actionMessage: action.message,
@@ -64,7 +64,13 @@ export const useEventStore = defineStore('event', {
 
       // The date will be used for next item.
       const days = Math.floor(Math.random() * 30 + 1)
-      this.date = this.date.add(days, 'day')
+      this.rawDate = this.rawDate.add(days, 'day')
+    },
+  },
+
+  getters: {
+    date(): string {
+      return this.rawDate.format('YY/MM/DD')
     },
   },
 })
