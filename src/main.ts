@@ -1,11 +1,11 @@
 import { createApp } from 'vue'
-import { Dialog, Quasar } from 'quasar'
 import { createPinia } from 'pinia'
-import 'quasar/dist/quasar.css'
 
 import App from './App.vue'
 import './style.css'
 
-createApp(App).use(createPinia()).use(Quasar, {
-  plugins: { Dialog },
-}).mount('#app')
+const meta = document.createElement('meta')
+meta.name = 'naive-ui-style'
+document.head.appendChild(meta)
+
+createApp(App).use(createPinia()).mount('#app')

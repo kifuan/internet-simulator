@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { NTimelineItem } from 'naive-ui'
 import { onMounted } from 'vue'
 import type { TimelineItem } from '../stores/event'
 
@@ -13,8 +14,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <QTimelineEntry>
-    <template #subtitle>
+  <NTimelineItem type="success">
+    <template #header>
       <div class="tw-text-xl">
         {{ item.dateText }}
       </div>
@@ -41,5 +42,5 @@ onMounted(() => {
         {{ message }}
       </div>
     </div>
-  </QTimelineEntry>
+  </NTimelineItem>
 </template>

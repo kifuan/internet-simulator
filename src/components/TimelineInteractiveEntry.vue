@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import { NButton, NTimelineItem } from 'naive-ui'
 import { storeToRefs } from 'pinia'
 import { onBeforeMount } from 'vue'
-import type { Action } from '../stores/event'
 import { useEventStore } from '../stores/event'
+import type { Action } from '../stores/event'
 
 const store = useEventStore()
 const { currentEvent, date } = storeToRefs(store)
@@ -19,8 +20,8 @@ async function handleActionClicked(action: Action) {
 </script>
 
 <template>
-  <QTimelineEntry>
-    <template #subtitle>
+  <NTimelineItem type="info">
+    <template #header>
       <div class="tw-text-xl">
         {{ date }}
       </div>
@@ -31,14 +32,13 @@ async function handleActionClicked(action: Action) {
         {{ currentEvent.text }}
       </div>
 
-      <QBtn
+      <NButton
         v-for="(action, index) in currentEvent.actions"
         :key="index"
-        :label="action.text"
-        color="white"
-        text-color="black"
         @click="handleActionClicked(action)"
-      />
+      >
+        {{ action.text }}
+      </NButton>
     </div>
-  </QTimelineEntry>
+  </NTimelineItem>
 </template>

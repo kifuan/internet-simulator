@@ -1,18 +1,11 @@
 <script setup lang="ts">
-import { useQuasar } from 'quasar'
+import { NButton } from 'naive-ui'
 
 const emits = defineEmits<{
   (e: 'close'): void
 }>()
 
-const q = useQuasar()
-
 function handleRepo() {
-  q.dialog({
-    title: '提示',
-    message: '暂未开源',
-    ok: '好的',
-  })
 }
 </script>
 
@@ -28,12 +21,12 @@ function handleRepo() {
 
     <div class="tw-pt-4 md:tw-pt-12" />
 
-    <QBtn color="white" text-color="black" class="tw-text-xl tw-m-12 md:tw-m-32" @click="emits('close')">
+    <NButton size="large" block @click="emits('close')">
       开始发电
-    </QBtn>
+    </NButton>
 
-    <QBtn color="white" text-color="black" class="tw-text-xl tw-m-12 md:tw-m-32" @click="handleRepo">
+    <NButton size="large" block @click="handleRepo">
       仓库地址
-    </QBtn>
+    </NButton>
   </div>
 </template>

@@ -47,24 +47,28 @@ export const useEventStore = defineStore('event', {
       return event
     },
 
-    pushTimeline(action: Action) {
+    pushTimeline(action: Action): TimelineItem {
       const actionEffectMessages = Object.entries(action.effect).map(([property, effect]) => {
         const desc = propertyDescriptions[property as keyof Property]
         const val: string = effect > 0 ? `+${effect}` : `${effect}`
         return `${desc} ${val}`
       })
 
-      this.timelineItems.push({
+      const item: TimelineItem = {
         dateText: this.date,
         eventText: this.currentEvent.text,
         actionText: action.text,
         actionMessage: action.message,
         actionEffectMessages,
-      })
+      }
+
+      this.timelineItems.push(item)
 
       // The date will be used for next item.
       const days = Math.floor(Math.random() * 30 + 1)
       this.rawDate = this.rawDate.add(days, 'day')
+
+      return item
     },
   },
 
