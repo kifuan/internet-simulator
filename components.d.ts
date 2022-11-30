@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     NButton: typeof import('naive-ui')['NButton']
     NConfigProvider: typeof import('naive-ui')['NConfigProvider']
     NDialogProvider: typeof import('naive-ui')['NDialogProvider']
+    NDivider: typeof import('naive-ui')['NDivider']
     NH1: typeof import('naive-ui')['NH1']
     NH3: typeof import('naive-ui')['NH3']
     NList: typeof import('naive-ui')['NList']

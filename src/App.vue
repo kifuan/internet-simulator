@@ -21,6 +21,6 @@ const welcomeClosed = ref(false)
 <style scoped>
 div {
   margin: 0 auto;
-  @apply tw-pt-16 tw-p-4 tw-max-w-2xl;
+  @apply tw-max-w-2xl;
 }
 </style>
