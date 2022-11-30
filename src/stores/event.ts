@@ -27,6 +27,35 @@ export interface HistoryEvent {
   }[]
 }
 
+const emojiPatterns = {
+  sweat: '😅😅😅',
+  fear: '😰😰😰',
+  rage: '😡😡😡',
+  yum: '😋😋😋',
+  rofl: '🤣🤣🤣',
+  cry: '😭😭😭',
+  cool: '😎😎😎',
+  champagne: '🍾🍾🍾',
+  satisfied: '😆😆😆',
+  shark: '🦈🦈🦈',
+  triumph: '😤😤😤',
+  heart: '😍😍😍',
+  dance: '💃💃💃',
+  wine: '🍷🍷🍷',
+  angel: '😇😇😇',
+  think: '🤔🤔🤔',
+}
+
+/**
+ * Transform emoji patterns to real emojis.
+ * @param text the text to be transformed.
+ */
+function transformEmojiPatterns(text: string): string {
+  return text.replace(/\[(.+)]/, (_, pattern) => {
+    return Reflect.get(emojiPatterns, pattern)
+  })
+}
+
 export const useEventStore = defineStore('event', {
   state: () => ({
     historyEvents: [] as HistoryEvent[],
@@ -62,9 +91,9 @@ export const useEventStore = defineStore('event', {
 
       const event: HistoryEvent = {
         dateText: this.date,
-        eventText: this.currentEvent.text,
-        actionText: action.text,
-        actionMessage: action.message,
+        eventText: transformEmojiPatterns(this.currentEvent.text),
+        actionText: transformEmojiPatterns(action.text),
+        actionMessage: transformEmojiPatterns(action.message),
         actionEffects,
       }
 

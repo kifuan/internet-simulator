@@ -586,7 +586,7 @@
       },
       {
         "text": "和你一起说[yum]",
-        "message": "所以是数一数二的罕见[tired]",
+        "message": "所以是数一数二的罕见[triumph]",
         "effect": {
           "patriotism": -5,
           "mind": 5,
@@ -779,7 +779,7 @@
         }
       },
       {
-        "text": "给某角色磕了[tired]",
+        "text": "给某角色磕了[triumph]",
         "message": "丑态！",
         "effect": {
           "patriotism": 5,
@@ -817,7 +817,7 @@
       },
       {
         "text": "打个交先[yum]",
-        "message": "GN真下头[tired]",
+        "message": "GN真下头[triumph]",
         "effect": {
           "patriotism": -5,
           "mind": 5,
@@ -831,7 +831,7 @@
     "text": "你推的V宣布了和榜一出游。",
     "actions": [
       {
-        "text": "怎么不是我怎么不是我[tired]",
+        "text": "怎么不是我怎么不是我[triumph]",
         "message": "管人痴差不多得了[sweat]",
         "effect": {
           "fun": -5,
@@ -916,7 +916,7 @@
         }
       },
       {
-        "text": "开小号继续刷SC[tired]",
+        "text": "开小号继续刷SC[triumph]",
         "message": "然后又被拉黑了[yum]",
         "effect": {
           "fun": -10,
@@ -988,7 +988,7 @@
         }
       },
       {
-        "text": "我才不管中之人之前怎么样，我爱的是这个皮[tired]",
+        "text": "我才不管中之人之前怎么样，我爱的是这个皮[triumph]",
         "message": "结晶喵[yum]",
         "effect": {
           "fun": -5,
@@ -1079,7 +1079,7 @@
     "actions": [
       {
         "text": "理解，大家都是普通人，好好休息呀[angel]",
-        "message": "于是你狠狠地刷SC想让她多直播[tired]",
+        "message": "于是你狠狠地刷SC想让她多直播[triumph]",
         "effect": {
           "baseline": 5,
           "money": -5,
@@ -1104,7 +1104,7 @@
     "actions": [
       {
         "text": "她自己的自由，我管不着[cry]",
-        "message": "然后继续狠狠地爆米[tired]",
+        "message": "然后继续狠狠地爆米[triumph]",
         "effect": {
           "fun": -5,
           "mind": -5,
@@ -1112,7 +1112,7 @@
         }
       },
       {
-        "text": "吗的让你去你还真去，切割了[tired]",
+        "text": "吗的让你去你还真去，切割了[triumph]",
         "message": "正确的[yum]",
         "effect": {
           "fun": 5,
@@ -1144,7 +1144,7 @@
       },
       {
         "text": "给我舔舔[heart]",
-        "message": "GN真的是[tired]",
+        "message": "GN真的是[triumph]",
         "effect": {
           "fun": 10,
           "baseline": -5
@@ -1188,7 +1188,7 @@
       },
       {
         "text": "不！我的爱人！我的温暖的大家庭！我不能接受！[cry]",
-        "message": "稀有的[tired]",
+        "message": "稀有的[triumph]",
         "effect": {
           "patriotism": -5,
           "mind": -5,
@@ -1210,7 +1210,7 @@
         }
       },
       {
-        "text": "一定不是她自愿的[tired]",
+        "text": "一定不是她自愿的[triumph]",
         "message": "稀有的[yum]",
         "effect": {
           "patriotism": -5,
@@ -1245,7 +1245,7 @@
       },
       {
         "text": "无所谓，我继续用 WIFI 破坏者大米111。",
-        "message": "没金币了[tired]",
+        "message": "没金币了[triumph]",
         "effect": {
           "patriotism": 5,
           "mind": -5
@@ -1259,7 +1259,7 @@
     "actions": [
       {
         "text": "竖起****他算个**。",
-        "message": "你的素养很差[tired]",
+        "message": "你的素养很差[triumph]",
         "effect": {
           "fun": 5,
           "baseline": -5
