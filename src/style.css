@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply tw-bg-zinc-900 tw-text-center;
+    @apply tw-bg-zinc-900;
 }
 
 html, body, #app {
