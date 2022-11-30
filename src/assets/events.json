@@ -281,6 +281,7 @@
       "text": "正确的。",
       "message": "我觉得这就是一种自信[satisfied]",
       "effect": {
+        "patriotism": -5
       }
     }]
   },
@@ -748,7 +749,7 @@
     "actions": [
       {
         "text": "安心喵。",
-        "message": "不爱国的人，请划走[rag]",
+        "message": "不爱国的人，请划走[rage]",
         "effect": {
           "patriotism": -5,
           "fun": 5
