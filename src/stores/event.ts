@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import events from '../assets/events.json'
 import type { Property } from './property'
+import { propertyDescriptions } from './property'
 
 export interface Event {
   id: number
@@ -14,29 +15,48 @@ export interface Action {
   effect: Partial<Property>
 }
 
-function chooseArray<T>(arr: T[]): T {
-  return arr[Math.floor(Math.random() * arr.length)]
+export interface TimelineItem {
+  eventText: string
+  actionText: string
+  actionMessage: string
+  actionEffectMessages: string[]
 }
 
 export const useEventStore = defineStore('event', {
   state: () => ({
-    history: [] as Event[],
+    timeline: [] as TimelineItem[],
+    currentEvent: {
+      id: -1,
+      text: 'Event text',
+      actions: [],
+    } as Event,
+    chosenIds: new Set<number>(),
   }),
   actions: {
-    next(): Event {
-      const event = chooseArray(events.filter(e => !this.historyId.includes(e.id)))
-      this.history.push(event)
+    chooseEvent(): Event {
+      const eventsArr = events.filter(e => !this.chosenIds.has(e.id))
+      const event = eventsArr[Math.floor(Math.random() * eventsArr.length)]
+
+      // Record it to the store.
+      this.currentEvent = event
+      this.chosenIds.add(event.id)
+
       return event
     },
-  },
-  getters: {
-    historyId(): number[] {
-      return this.history.map(e => e.id)
-    },
-    current(): Event {
-      if (this.history.length === 0)
-        throw new Error('there is no events')
-      return this.history.at(-1)!
+
+    pushTimeline(action: Action) {
+      const actionEffectMessages = Object.entries(action.effect).map(([property, effect]) => {
+        const desc = propertyDescriptions[property as keyof Property]
+        const val = effect > 0 ? `+${effect}` : `${effect}`
+        return `${desc} ${val}`
+      })
+
+      this.timeline.push({
+        eventText: this.currentEvent.text,
+        actionText: action.text,
+        actionMessage: action.message,
+        actionEffectMessages,
+      })
     },
   },
 })

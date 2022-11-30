@@ -27,6 +27,17 @@ export interface Property {
   fun: number
 }
 
+/**
+ * The description for each property.
+ */
+export const propertyDescriptions: Record<keyof Property, string> = {
+  patriotism: '爱国',
+  baseline: '米线',
+  money: '金币',
+  mind: '心态',
+  fun: '乐子',
+}
+
 export const usePropertyStore = defineStore('property', {
   state: () => ({
     property: {
