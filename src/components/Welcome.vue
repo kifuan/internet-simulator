@@ -10,7 +10,7 @@ const eventStore = useEventStore()
 
 const message = useMessage()
 function handleRepo() {
-  message.info('别急, 暂未开源')
+  window.location.href = 'https://github.com/kifuan/internet-simulator'
 }
 
 function handleStart() {
@@ -19,7 +19,7 @@ function handleStart() {
 }
 
 function handleVersion() {
-  message.info('v0.4')
+  message.info('v0.5')
 }
 </script>
 
