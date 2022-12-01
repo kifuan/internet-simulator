@@ -5,7 +5,6 @@ import { NList } from 'naive-ui'
 import { useEventStore } from '../stores/event'
 import InteractiveEventPanel from './InteractiveEventPanel.vue'
 import HistoryEventPanel from './HistoryEventPanel.vue'
-import GameOverPanel from './GameOverPanel.vue'
 
 const emits = defineEmits<{
   (e: 'scroll', top: number): void
@@ -14,7 +13,7 @@ const emits = defineEmits<{
 const { historyEvents, gameOver } = storeToRefs(useEventStore())
 const list = ref<InstanceType<typeof NList>>()
 
-function handleInteractivePanelUpdate() {
+function handleScroll() {
   emits('scroll', list.value!.$el.scrollHeight)
 }
 </script>
@@ -33,8 +32,7 @@ function handleInteractivePanelUpdate() {
     </NListItem>
 
     <NListItem class="item">
-      <GameOverPanel v-if="gameOver" />
-      <InteractiveEventPanel v-else @update="handleInteractivePanelUpdate" />
+      <InteractiveEventPanel @update="handleScroll" />
     </NListItem>
   </NList>
 </template>

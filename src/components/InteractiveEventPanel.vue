@@ -5,6 +5,7 @@ import { computed, onMounted, onUpdated, ref } from 'vue'
 import type { Action } from '../stores/event'
 import { useEventStore } from '../stores/event'
 import { usePropertyStore } from '../stores/property'
+import GameOverPanel from './GameOverPanel.vue'
 import InteractiveButton from './InteractiveButton.vue'
 
 const emits = defineEmits<{
@@ -16,7 +17,7 @@ const loading = ref(true)
 const eventStore = useEventStore()
 const propertyStore = usePropertyStore()
 const { width: windowWidth } = useWindowSize()
-const { historyEvents, currentEvent, formattedDate } = storeToRefs(eventStore)
+const { historyEvents, currentEvent, formattedDate, gameOver } = storeToRefs(eventStore)
 const title = computed(() => `事件 #${historyEvents.value.length + 1}`)
 const skeletonTitleWidth = computed(() => `${windowWidth.value * 0.3}px`)
 const skeletonDateWidth = computed(() => `${windowWidth.value * 0.2}px`)
@@ -58,6 +59,7 @@ onUpdated(() => {
 
     <NSkeleton text :repeat="3" />
   </NThing>
+  <GameOverPanel v-else-if="gameOver" />
   <NThing v-else>
     <template #header>
       <div class="tw-text-lg">

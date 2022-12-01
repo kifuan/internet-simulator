@@ -39,18 +39,63 @@ export const propertyDescriptions: Record<keyof Property, string> = {
 }
 
 /**
+ * The high property value to be compared when rating.
+ */
+const highPropValue = 35
+
+/**
+ * The low property value to be compared when rating.
+ */
+const lowPropValue = 15
+
+/**
+ * Strategies to rate the properties.
+ */
+const rateStrategies: Record<keyof Property, (value: number) => string | false> = {
+  patriotism: (value) => {
+    if (value >= highPropValue)
+      return '不是黑象我不吃，不是 HUAMEI 我不买，不是呃呃我不玩！'
+    if (value <= lowPropValue)
+      return '谁罕见↘啊↗，骂谁↗罕见↘呢，骂谁罕见！'
+    return false
+  },
+  baseline: (value) => {
+    if (value <= lowPropValue)
+      return '我老想吃草莓了，可惜草莓太贵了。'
+    return false
+  },
+  money: (value) => {
+    if (value >= highPropValue)
+      return '爆金币，爆一只，爆一只喵。'
+    if (value <= lowPropValue)
+      return '爆不出金币了吧。'
+    return false
+  },
+  mind: (value) => {
+    if (value <= lowPropValue)
+      return '今天玉玉，明天不要笑挑战，后天百大！'
+    return false
+  },
+  fun: (value) => {
+    if (value >= highPropValue)
+      return '不觉得这很乐吗，我觉得这实在是太乐了。'
+    return false
+  },
+}
+
+/**
  * Initial property value.
  */
-const initialPropertyValue = 20
+const initialPropValue = 25
 
 export const usePropertyStore = defineStore('property', {
   state: () => ({
     property: {
-      patriotism: initialPropertyValue,
-      baseline: initialPropertyValue,
-      money: initialPropertyValue,
-      mind: initialPropertyValue,
-      fun: initialPropertyValue,
+      patriotism: initialPropValue,
+      baseline: initialPropValue,
+      money: initialPropValue,
+      mind: initialPropValue,
+      fun: initialPropValue,
     } as Property,
 
     prevProperty: {
@@ -67,6 +112,25 @@ export const usePropertyStore = defineStore('property', {
       Object.entries(prop).forEach(([key, value]) => {
         this.property[key as keyof Property] += value
       })
+    },
+
+    getRates(): string[] {
+      const entries: Array<[keyof Property, number]> = (
+        Object.entries(this.property)
+          .map(entry => [entry[0], Math.abs(entry[1] - initialPropValue)])
+      ) as any
+
+      const propKeys = (entries.filter(e => e[1] > initialPropValue)
+        .sort((a, b) => b[1] - a[1])
+        .map(entry => entry[0])
+      )
+
+      const rates = propKeys.map((key) => {
+        const value = this.property[key]
+        return rateStrategies[key](value)
+      }).filter(r => r !== false) as string[]
+
+      return rates.length !== 0 ? rates : ['在这个混沌的互联网中，纯良UU显得何等珍贵。']
     },
   },
 })
