@@ -61,14 +61,14 @@ const rateStrategies: Record<keyof Property, (value: number) => string | false> 
   },
   baseline: (value) => {
     if (value <= lowPropValue)
-      return '我老想吃草莓了，可惜草莓太贵了。'
+      return '注意你的米线三八线地平线中位线切线本初子午线国际日变更线。'
     return false
   },
   money: (value) => {
     if (value >= highPropValue)
-      return '爆金币，爆一只，爆一只喵。'
+      return '付哥，爆金币，爆一只，爆一只喵。'
     if (value <= lowPropValue)
-      return '爆不出金币了吧。'
+      return '穷草姬，爆不出金币了吧。'
     return false
   },
   mind: (value) => {
