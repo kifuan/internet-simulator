@@ -23,7 +23,7 @@ declare module '@vue/runtime-core' {
     HistoryEventPanel: typeof import('./src/components/HistoryEventPanel.vue')['default']
     HistoryEventPanelNoHeader: typeof import('./src/components/DialogPanel.vue')['default']
     HistoryEvents: typeof import('./src/components/EventList.vue')['default']
-    InteractiveButton: typeof import('./src/components/InteractiveButton.vue')['default']
+    InteractiveButton: typeof import('./src/components/AutoBlurBlockButton.vue')['default']
     InteractiveEventPanel: typeof import('./src/components/LatestPanel.vue')['default']
     InteractivePanel: typeof import('./src/components/InteractivePanel.vue')['default']
     LatestPanel: typeof import('./src/components/LatestPanel.vue')['default']

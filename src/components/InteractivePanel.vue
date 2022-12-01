@@ -5,7 +5,7 @@ import { computed } from 'vue'
 import type { Action } from '../stores/event'
 import { useEventStore } from '../stores/event'
 import { usePropertyStore } from '../stores/property'
-import InteractiveButton from './InteractiveButton.vue'
+import AutoBlurBlockButton from './AutoBlurBlockButton.vue'
 
 const emits = defineEmits<{
   (e: 'load'): void
@@ -45,7 +45,7 @@ function handleSelectAction(action: Action) {
         {{ currentEvent.text }}
       </NText>
 
-      <InteractiveButton
+      <AutoBlurBlockButton
         v-for="(action, index) in currentEvent.actions"
         :key="index"
         @click="handleSelectAction(action)"
@@ -53,7 +53,7 @@ function handleSelectAction(action: Action) {
         <div :style="{ maxWidth: buttonTextWidth }">
           {{ action.text }}
         </div>
-      </InteractiveButton>
+      </AutoBlurBlockButton>
     </NSpace>
   </NThing>
 </template>

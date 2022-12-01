@@ -2,7 +2,7 @@
 import { useDialog } from 'naive-ui'
 import { useEventStore } from '../stores/event'
 import { usePropertyStore } from '../stores/property'
-import InteractiveButton from './InteractiveButton.vue'
+import AutoBlurBlockButton from './AutoBlurBlockButton.vue'
 
 const propStore = usePropertyStore()
 const eventStore = useEventStore()
@@ -36,9 +36,9 @@ function handleAgain() {
         {{ rate }}
       </NText>
 
-      <InteractiveButton @click="handleAgain">
+      <AutoBlurBlockButton @click="handleAgain">
         Remake
-      </InteractiveButton>
+      </AutoBlurBlockButton>
     </NSpace>
   </NThing>
 </template>
