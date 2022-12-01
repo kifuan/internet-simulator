@@ -10,10 +10,12 @@ const welcomeClosed = ref(false)
 <template>
   <NConfigProvider :locale="zhCN" :date-locale="dateZhCN" preflight-style-disabled>
     <NMessageProvider>
-      <div>
-        <Game v-if="welcomeClosed" />
-        <Welcome v-else @close="welcomeClosed = true" />
-      </div>
+      <NDialogProvider>
+        <div>
+          <Game v-if="welcomeClosed" />
+          <Welcome v-else @close="welcomeClosed = true" />
+        </div>
+      </NDialogProvider>
     </NMessageProvider>
   </NConfigProvider>
 </template>

@@ -83,7 +83,7 @@ export const useEventStore = defineStore('event', {
       return event
     },
 
-    pushTimeline(action: Action): HistoryEvent {
+    getHistoryEvent(action: Action): HistoryEvent {
       const actionEffects = Object.entries(action.effect).map(([property, effect]) => {
         const desc = propertyDescriptions[property as keyof Property]
         const val: string = effect > 0 ? `+${effect}` : `${effect}`
@@ -93,18 +93,18 @@ export const useEventStore = defineStore('event', {
         }
       }).sort((e1, e2) => e2.value - e1.value)
 
-      const event: HistoryEvent = {
+      return {
         dateText: this.formattedDate,
         eventText: this.currentEvent.text,
         actionText: action.text,
         actionMessage: action.message,
         actionEffects,
       }
+    },
 
+    addHistoryEvent(event: HistoryEvent) {
       this.historyEvents.push(event)
       this.rawDate = this.rawDate.add(Math.floor(Math.random() * 30 + 1), 'day')
-
-      return event
     },
   },
 
