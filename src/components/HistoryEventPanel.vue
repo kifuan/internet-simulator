@@ -17,7 +17,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <NCard size="small" :bordered="false">
+  <NThing>
     <template #header>
       <div class="tw-text-lg">
         事件 #{{ id }}
@@ -56,5 +56,5 @@ onMounted(() => {
         {{ event.actionMessage }}
       </NText>
     </NSpace>
-  </NCard>
+  </NThing>
 </template>

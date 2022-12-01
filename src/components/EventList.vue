@@ -24,6 +24,7 @@ function handleScroll() {
     <NListItem
       v-for="(event, index) in historyEvents"
       :key="index"
+      class="item"
     >
       <HistoryEventPanel
         :id="index + 1"
@@ -32,9 +33,15 @@ function handleScroll() {
       />
     </NListItem>
 
-    <NListItem>
+    <NListItem class="item">
       <GameOverPanel v-if="gameOver" />
       <InteractiveEventPanel v-else />
     </NListItem>
   </NList>
 </template>
+
+<style scoped>
+.item {
+  @apply tw-px-4 !important;
+}
+</style>

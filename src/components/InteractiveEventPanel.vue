@@ -18,7 +18,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
-  <NCard size="small" :bordered="false">
+  <NThing>
     <template #header>
       <div class="tw-text-lg">
         事件 #{{ historyEvents.length + 1 }}
@@ -45,5 +45,5 @@ onBeforeMount(() => {
         {{ action.text }}
       </NButton>
     </NSpace>
-  </NCard>
+  </NThing>
 </template>

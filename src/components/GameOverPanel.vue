@@ -1,9 +1,9 @@
 <template>
-  <NCard size="small" :bordered="false">
+  <NThing>
     <template #header>
       <div class="tw-text-lg">
         结算
       </div>
     </template>
-  </NCard>
+  </NThing>
 </template>
