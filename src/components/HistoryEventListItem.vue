@@ -7,11 +7,12 @@ defineProps<{
   id: number
 }>()
 
+const emits = defineEmits<{
+  (e: 'scroll'): void
+}>()
+
 onMounted(() => {
-  window.scrollTo({
-    top: document.body.clientHeight,
-    behavior: 'smooth',
-  })
+  emits('scroll')
 })
 </script>
 
