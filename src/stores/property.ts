@@ -38,9 +38,22 @@ export const propertyDescriptions: Record<keyof Property, string> = {
   fun: '乐子',
 }
 
+/**
+ * Initial property value.
+ */
+const initialPropertyValue = 20
+
 export const usePropertyStore = defineStore('property', {
   state: () => ({
     property: {
+      patriotism: initialPropertyValue,
+      baseline: initialPropertyValue,
+      money: initialPropertyValue,
+      mind: initialPropertyValue,
+      fun: initialPropertyValue,
+    } as Property,
+
+    prevProperty: {
       patriotism: 0,
       baseline: 0,
       money: 0,
@@ -50,6 +63,7 @@ export const usePropertyStore = defineStore('property', {
   }),
   actions: {
     change(prop: Partial<Property>) {
+      Object.assign(this.prevProperty, this.property)
       Object.entries(prop).forEach(([key, value]) => {
         this.property[key as keyof Property] += value
       })

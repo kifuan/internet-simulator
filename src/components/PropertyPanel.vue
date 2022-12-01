@@ -9,7 +9,7 @@ const emits = defineEmits<{
 }>()
 
 const descriptions = ref<InstanceType<typeof NDescriptions>>()
-const { property } = storeToRefs(usePropertyStore())
+const { property, prevProperty } = storeToRefs(usePropertyStore())
 
 onMounted(() => {
   const height = parseInt(window.getComputedStyle(descriptions.value!.$el).height)
@@ -20,23 +20,43 @@ onMounted(() => {
 <template>
   <NDescriptions ref="descriptions" bordered :columns="5">
     <NDescriptionsItem label="爱国">
-      {{ property.patriotism }}
+      <NNumberAnimation
+        :from="prevProperty.patriotism"
+        :to="property.patriotism"
+        :duration="1000"
+      />
     </NDescriptionsItem>
 
     <NDescriptionsItem label="米线">
-      {{ property.baseline }}
+      <NNumberAnimation
+        :from="prevProperty.baseline"
+        :to="property.baseline"
+        :duration="1000"
+      />
     </NDescriptionsItem>
 
     <NDescriptionsItem label="金币">
-      {{ property.money }}
+      <NNumberAnimation
+        :from="prevProperty.money"
+        :to="property.money"
+        :duration="1000"
+      />
     </NDescriptionsItem>
 
     <NDescriptionsItem label="心态">
-      {{ property.mind }}
+      <NNumberAnimation
+        :from="prevProperty.mind"
+        :to="property.mind"
+        :duration="1000"
+      />
     </NDescriptionsItem>
 
     <NDescriptionsItem label="乐子">
-      {{ property.fun }}
+      <NNumberAnimation
+        :from="prevProperty.fun"
+        :to="property.fun"
+        :duration="1000"
+      />
     </NDescriptionsItem>
   </NDescriptions>
 </template>

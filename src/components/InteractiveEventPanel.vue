@@ -5,11 +5,13 @@ import { storeToRefs } from 'pinia'
 import { computed, h, onBeforeMount } from 'vue'
 import type { Action } from '../stores/event'
 import { useEventStore } from '../stores/event'
+import { usePropertyStore } from '../stores/property'
 import DialogPanel from './DialogPanel.vue'
 import InteractiveButton from './InteractiveButton.vue'
 
 const dialog = useDialog()
 const eventStore = useEventStore()
+const propertyStore = usePropertyStore()
 const { width: windowWidth } = useWindowSize()
 const { historyEvents, currentEvent, formattedDate } = storeToRefs(eventStore)
 const title = computed(() => `事件 #${historyEvents.value.length + 1}`)
@@ -25,6 +27,7 @@ function handleSelectAction(action: Action) {
     closable: false,
     onAfterLeave: () => {
       eventStore.addHistoryEvent(event)
+      propertyStore.change(action.effect)
       eventStore.chooseEvent()
     },
   })
