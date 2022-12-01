@@ -17,6 +17,10 @@ function handleStart() {
   eventStore.chooseEvent()
   emits('close')
 }
+
+function handleVersion() {
+  message.info('v0.1')
+}
 </script>
 
 <template>
@@ -41,6 +45,12 @@ function handleStart() {
       <NButton size="large" @click="handleRepo">
         <div class="tw-px-16">
           仓库地址
+        </div>
+      </NButton>
+
+      <NButton size="large" @click="handleVersion">
+        <div class="tw-px-16">
+          版本信息
         </div>
       </NButton>
     </NSpace>
