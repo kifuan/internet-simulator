@@ -51,6 +51,7 @@ const emojiPatterns = {
   wine: '🍷🍷🍷',
   angel: '😇😇😇',
   think: '🤔🤔🤔',
+  tired: '😩😩😩',
 }
 
 /**
