@@ -120,8 +120,7 @@ export const usePropertyStore = defineStore('property', {
           .map(entry => [entry[0], Math.abs(entry[1] - initialPropValue)])
       ) as any
 
-      const propKeys = (entries.filter(e => e[1] > initialPropValue)
-        .sort((a, b) => b[1] - a[1])
+      const propKeys = (entries.sort((a, b) => b[1] - a[1])
         .map(entry => entry[0])
       )
 
