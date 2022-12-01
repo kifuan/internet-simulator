@@ -7,13 +7,16 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    EventInteractiveItem: typeof import('./src/components/EventInteractiveItem.vue')['default']
-    EventItem: typeof import('./src/components/EventItem.vue')['default']
+    EventInteractiveItem: typeof import('./src/components/InteractiveEventPanel.vue')['default']
+    EventItem: typeof import('./src/components/HistoryEventPanel.vue')['default']
     EventList: typeof import('./src/components/EventList.vue')['default']
     Game: typeof import('./src/components/Game.vue')['default']
+    GameOverPanel: typeof import('./src/components/GameOverPanel.vue')['default']
     HistoryEventList: typeof import('./src/components/EventList.vue')['default']
-    HistoryEventListItem: typeof import('./src/components/EventItem.vue')['default']
+    HistoryEventListItem: typeof import('./src/components/HistoryEventPanel.vue')['default']
+    HistoryEventPanel: typeof import('./src/components/HistoryEventPanel.vue')['default']
     HistoryEvents: typeof import('./src/components/EventList.vue')['default']
+    InteractiveEventPanel: typeof import('./src/components/InteractiveEventPanel.vue')['default']
     NAffix: typeof import('naive-ui')['NAffix']
     NButton: typeof import('naive-ui')['NButton']
     NCard: typeof import('naive-ui')['NCard']

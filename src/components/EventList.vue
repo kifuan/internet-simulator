@@ -3,14 +3,15 @@ import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
 import { NList } from 'naive-ui'
 import { useEventStore } from '../stores/event'
-import EventInteractiveItem from './EventInteractiveItem.vue'
-import EventItem from './EventItem.vue'
+import InteractiveEventPanel from './InteractiveEventPanel.vue'
+import HistoryEventPanel from './HistoryEventPanel.vue'
+import GameOverPanel from './GameOverPanel.vue'
 
 const emits = defineEmits<{
   (e: 'scroll', top: number): void
 }>()
 
-const { historyEvents } = storeToRefs(useEventStore())
+const { historyEvents, gameOver } = storeToRefs(useEventStore())
 const list = ref<InstanceType<typeof NList>>()
 
 function handleScroll() {
@@ -20,14 +21,20 @@ function handleScroll() {
 
 <template>
   <NList ref="list">
-    <EventItem
+    <NListItem
       v-for="(event, index) in historyEvents"
-      :id="index + 1"
       :key="index"
-      :event="event"
-      @scroll="handleScroll"
-    />
+    >
+      <HistoryEventPanel
+        :id="index + 1"
+        :event="event"
+        @scroll="handleScroll"
+      />
+    </NListItem>
 
-    <EventInteractiveItem />
+    <NListItem>
+      <GameOverPanel v-if="gameOver" />
+      <InteractiveEventPanel v-else />
+    </NListItem>
   </NList>
 </template>

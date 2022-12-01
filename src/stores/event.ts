@@ -27,6 +27,11 @@ export interface HistoryEvent {
   }[]
 }
 
+/**
+ * When should the game overs.
+ */
+const gameOverEventCount = 10
+
 const emojiPatterns = {
   sweat: '😅😅😅',
   fear: '😰😰😰',
@@ -124,6 +129,10 @@ export const useEventStore = defineStore('event', {
           message: transformEmojiPatterns(a.message),
         })),
       }))
+    },
+
+    gameOver(): boolean {
+      return this.historyEvents.length >= gameOverEventCount
     },
   },
 })
