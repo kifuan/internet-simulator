@@ -89,7 +89,7 @@ export const useEventStore = defineStore('event', {
       }).sort((e1, e2) => e2.value - e1.value)
 
       const event: HistoryEvent = {
-        dateText: this.date,
+        dateText: this.formattedDate,
         eventText: this.currentEvent.text,
         actionText: action.text,
         actionMessage: action.message,
@@ -104,7 +104,10 @@ export const useEventStore = defineStore('event', {
   },
 
   getters: {
-    date(): string {
+    /**
+     * The formatted date in string.
+     */
+    formattedDate(): string {
       return this.rawDate.format('YYYY/MM/DD')
     },
 
