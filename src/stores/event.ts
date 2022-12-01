@@ -32,7 +32,7 @@ export interface HistoryEvent {
 /**
  * When should the game overs.
  */
-const gameOverEventCount = 10
+const gameOverEventCount = 15
 
 const emojiPatterns = {
   sweat: '😅😅😅',
