@@ -28,7 +28,7 @@ export interface Property {
 }
 
 /**
- * The description for each property.
+ * The descriptions for properties.
  */
 export const propertyDescriptions: Record<keyof Property, string> = {
   patriotism: '爱国',
@@ -39,12 +39,12 @@ export const propertyDescriptions: Record<keyof Property, string> = {
 }
 
 /**
- * The high property value to be compared when rating.
+ * Any property higher than it is a high property, compared when rating.
  */
 const highPropValue = 45
 
 /**
- * The low property value to be compared when rating.
+ * Any property lower than this is a low property, compared when rating.
  */
 const lowPropValue = 5
 
