@@ -26,7 +26,7 @@ function handleScroll(top: number) {
 <template>
   <NCard :bordered="false" :style="{ paddingTop }">
     <template #header>
-      <PropertyPanel :height="h => propHeight = h" />
+      <PropertyPanel :height="(h: number) => propHeight = h" />
     </template>
     <NScrollbar ref="scrollbar" :style="{ maxHeight: listHeight }">
       <EventList @scroll="handleScroll" />
