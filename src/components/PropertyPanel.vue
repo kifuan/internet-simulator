@@ -23,7 +23,6 @@ onMounted(() => {
       <NNumberAnimation
         :from="prevProperty.patriotism"
         :to="property.patriotism"
-        :duration="1000"
       />
     </NDescriptionsItem>
 
@@ -31,7 +30,6 @@ onMounted(() => {
       <NNumberAnimation
         :from="prevProperty.baseline"
         :to="property.baseline"
-        :duration="1000"
       />
     </NDescriptionsItem>
 
@@ -39,7 +37,6 @@ onMounted(() => {
       <NNumberAnimation
         :from="prevProperty.money"
         :to="property.money"
-        :duration="1000"
       />
     </NDescriptionsItem>
 
@@ -47,7 +44,6 @@ onMounted(() => {
       <NNumberAnimation
         :from="prevProperty.mind"
         :to="property.mind"
-        :duration="1000"
       />
     </NDescriptionsItem>
 
@@ -55,7 +51,6 @@ onMounted(() => {
       <NNumberAnimation
         :from="prevProperty.fun"
         :to="property.fun"
-        :duration="1000"
       />
     </NDescriptionsItem>
   </NDescriptions>

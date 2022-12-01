@@ -19,7 +19,7 @@ function handleStart() {
 }
 
 function handleVersion() {
-  message.info('v0.3')
+  message.info('v0.4')
 }
 </script>
 
