@@ -7,10 +7,13 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    EventInteractiveItem: typeof import('./src/components/EventInteractiveItem.vue')['default']
+    EventItem: typeof import('./src/components/EventItem.vue')['default']
+    EventList: typeof import('./src/components/EventList.vue')['default']
     Game: typeof import('./src/components/Game.vue')['default']
-    HistoryEventList: typeof import('./src/components/HistoryEventList.vue')['default']
-    HistoryEventListItem: typeof import('./src/components/HistoryEventListItem.vue')['default']
-    HistoryEvents: typeof import('./src/components/HistoryEventList.vue')['default']
+    HistoryEventList: typeof import('./src/components/EventList.vue')['default']
+    HistoryEventListItem: typeof import('./src/components/EventItem.vue')['default']
+    HistoryEvents: typeof import('./src/components/EventList.vue')['default']
     NAffix: typeof import('naive-ui')['NAffix']
     NButton: typeof import('naive-ui')['NButton']
     NCard: typeof import('naive-ui')['NCard']

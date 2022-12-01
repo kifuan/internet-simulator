@@ -18,7 +18,7 @@ onMounted(() => {
 
 <template>
   <NListItem>
-    <NThing>
+    <NCard :bordered="false">
       <template #header>
         <div class="tw-text-lg">
           事件 #{{ id }}
@@ -57,6 +57,6 @@ onMounted(() => {
           {{ event.actionMessage }}
         </NText>
       </NSpace>
-    </NThing>
+    </NCard>
   </NListItem>
 </template>

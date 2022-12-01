@@ -3,7 +3,8 @@ import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
 import { NList } from 'naive-ui'
 import { useEventStore } from '../stores/event'
-import HistoryEventListItem from './HistoryEventListItem.vue'
+import EventInteractiveItem from './EventInteractiveItem.vue'
+import EventItem from './EventItem.vue'
 
 const emits = defineEmits<{
   (e: 'scroll', top: number): void
@@ -18,13 +19,15 @@ function handleScroll() {
 </script>
 
 <template>
-  <NList ref="list" hoverable>
-    <HistoryEventListItem
+  <NList ref="list">
+    <EventItem
       v-for="(event, index) in historyEvents"
       :id="index + 1"
       :key="index"
       :event="event"
       @scroll="handleScroll"
     />
+
+    <EventInteractiveItem />
   </NList>
 </template>

@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { useWindowSize } from '@vueuse/core'
 import { NScrollbar } from 'naive-ui'
-import { computed, onMounted, ref } from 'vue'
-import { useEventStore } from '../stores/event'
-import HistoryEventList from './HistoryEventList.vue'
+import { computed, ref } from 'vue'
+import EventList from './EventList.vue'
 import PropertyPanel from './PropertyPanel.vue'
 
-const { chooseEvent, pushTimeline } = useEventStore()
 const { height: windowHeight } = useWindowSize()
 const propHeight = ref(0)
 const paddingTop = '20px'
@@ -23,14 +21,6 @@ function handleScroll(top: number) {
     behavior: 'smooth',
   })
 }
-
-onMounted(async () => {
-  for (let i = 0; i < 10; i++) {
-    const event = chooseEvent()
-    pushTimeline(event.actions[0])
-    await new Promise(resolve => setTimeout(resolve, 1000))
-  }
-})
 </script>
 
 <template>
@@ -39,7 +29,7 @@ onMounted(async () => {
       <PropertyPanel :height="h => propHeight = h" />
     </template>
     <NScrollbar ref="scrollbar" :style="{ maxHeight: listHeight }">
-      <HistoryEventList @scroll="handleScroll" />
+      <EventList @scroll="handleScroll" />
     </NScrollbar>
   </NCard>
 </template>
