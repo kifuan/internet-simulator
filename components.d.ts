@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AutoBlurButton: typeof import('./src/components/AutoBlurButton.vue')['default']
     DialogAction: typeof import('./src/components/DialogPanel.vue')['default']
     DialogHistoryEventPanel: typeof import('./src/components/DialogPanel.vue')['default']
     DialogPanel: typeof import('./src/components/DialogPanel.vue')['default']
@@ -22,6 +23,7 @@ declare module '@vue/runtime-core' {
     HistoryEventPanel: typeof import('./src/components/HistoryEventPanel.vue')['default']
     HistoryEventPanelNoHeader: typeof import('./src/components/DialogPanel.vue')['default']
     HistoryEvents: typeof import('./src/components/EventList.vue')['default']
+    InteractiveButton: typeof import('./src/components/InteractiveButton.vue')['default']
     InteractiveEventPanel: typeof import('./src/components/InteractiveEventPanel.vue')['default']
     NAffix: typeof import('naive-ui')['NAffix']
     NButton: typeof import('naive-ui')['NButton']

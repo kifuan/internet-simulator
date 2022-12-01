@@ -6,6 +6,7 @@ import { computed, h, onBeforeMount } from 'vue'
 import type { Action } from '../stores/event'
 import { useEventStore } from '../stores/event'
 import DialogPanel from './DialogPanel.vue'
+import InteractiveButton from './InteractiveButton.vue'
 
 const dialog = useDialog()
 const eventStore = useEventStore()
@@ -53,16 +54,15 @@ onBeforeMount(() => {
         {{ currentEvent.text }}
       </NText>
 
-      <NButton
+      <InteractiveButton
         v-for="(action, index) in currentEvent.actions"
         :key="index"
-        block
         @click="handleSelectAction(action)"
       >
         <div :style="{ maxWidth: buttonTextWidth }">
           {{ action.text }}
         </div>
-      </NButton>
+      </InteractiveButton>
     </NSpace>
   </NThing>
 </template>
