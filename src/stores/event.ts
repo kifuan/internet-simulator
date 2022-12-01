@@ -1,6 +1,6 @@
 import dayjs from 'dayjs'
 import { defineStore } from 'pinia'
-import events from '../assets/events.json'
+import eventsJSON from '../assets/events.json'
 import type { Property } from './property'
 import { propertyDescriptions } from './property'
 
@@ -69,8 +69,7 @@ export const useEventStore = defineStore('event', {
   }),
   actions: {
     chooseEvent(): Event {
-      const eventsArr = events.filter(e => !this.historyIds.has(e.id))
-      const event = eventsArr[Math.floor(Math.random() * eventsArr.length)]
+      const event = this.remainingEvents[Math.floor(Math.random() * this.remainingEvents.length)]
 
       // Record it to the store.
       this.currentEvent = event
@@ -91,9 +90,9 @@ export const useEventStore = defineStore('event', {
 
       const event: HistoryEvent = {
         dateText: this.date,
-        eventText: transformEmojiPatterns(this.currentEvent.text),
-        actionText: transformEmojiPatterns(action.text),
-        actionMessage: transformEmojiPatterns(action.message),
+        eventText: this.currentEvent.text,
+        actionText: action.text,
+        actionMessage: action.message,
         actionEffects,
       }
 
@@ -107,6 +106,21 @@ export const useEventStore = defineStore('event', {
   getters: {
     date(): string {
       return this.rawDate.format('YYYY/MM/DD')
+    },
+
+    /**
+     * The events that are not in historyIds set, whose emojis in the texts are transformed.
+     */
+    remainingEvents(): Event[] {
+      return eventsJSON.filter(e => !this.historyIds.has(e.id)).map(e => ({
+        ...e,
+        text: transformEmojiPatterns(e.text),
+        actions: e.actions.map(a => ({
+          ...a,
+          text: transformEmojiPatterns(a.text),
+          message: transformEmojiPatterns(a.message),
+        })),
+      }))
     },
   },
 })
