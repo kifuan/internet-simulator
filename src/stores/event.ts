@@ -16,15 +16,17 @@ export interface Action {
   effect: Partial<Property>
 }
 
+export interface HistoryActionEffect {
+  text: string
+  value: number
+}
+
 export interface HistoryEvent {
   dateText: string
   eventText: string
   actionText: string
   actionMessage: string
-  actionEffects: {
-    text: string
-    value: number
-  }[]
+  actionEffects: HistoryActionEffect[]
 }
 
 /**
@@ -90,7 +92,7 @@ export const useEventStore = defineStore('event', {
         return {
           text: `${desc} ${val}`,
           value: effect,
-        }
+        } as HistoryActionEffect
       }).sort((e1, e2) => e2.value - e1.value)
 
       return {
