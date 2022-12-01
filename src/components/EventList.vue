@@ -3,7 +3,7 @@ import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
 import { NList } from 'naive-ui'
 import { useEventStore } from '../stores/event'
-import InteractiveEventPanel from './InteractiveEventPanel.vue'
+import LatestPanel from './LatestPanel.vue'
 import HistoryEventPanel from './HistoryEventPanel.vue'
 
 const emits = defineEmits<{
@@ -32,7 +32,7 @@ function handleScroll() {
     </NListItem>
 
     <NListItem class="item">
-      <InteractiveEventPanel @update="handleScroll" />
+      <LatestPanel @update="handleScroll" />
     </NListItem>
   </NList>
 </template>

@@ -1,13 +1,21 @@
 <script setup lang="ts">
 import { useMessage } from 'naive-ui'
+import { useEventStore } from '../stores/event'
 
 const emits = defineEmits<{
   (e: 'close'): void
 }>()
 
+const eventStore = useEventStore()
+
 const message = useMessage()
 function handleRepo() {
   message.info('别急, 暂未开源')
+}
+
+function handleStart() {
+  eventStore.chooseEvent()
+  emits('close')
 }
 </script>
 
@@ -24,7 +32,7 @@ function handleRepo() {
 
       <div class="tw-pt-16" />
 
-      <NButton size="large" @click="emits('close')">
+      <NButton size="large" @click="handleStart">
         <div class="tw-px-16">
           开始发电
         </div>
@@ -38,4 +46,3 @@ function handleRepo() {
     </NSpace>
   </div>
 </template>
-`
