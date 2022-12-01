@@ -5,7 +5,7 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'internet-simulator',
+  base: '/internet-simulator/',
   plugins: [
     vue(),
     Components({
