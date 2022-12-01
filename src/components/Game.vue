@@ -14,17 +14,12 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="tw-pt-16 tw-p-4">
-    <NSpace vertical size="large">
-      <h1 class="tw-text-3xl tw-pl-4">
+  <NCard :bordered="false" class="tw-pt-8">
+    <template #header>
+      <h1 class="tw-text-3xl">
         历史事件
       </h1>
-
-      <p class="tw-text-lg tw-pl-4">
-        发生的事件都会显示在此处。
-      </p>
-
-      <HistoryEventList />
-    </NSpace>
-  </div>
+    </template>
+    <HistoryEventList />
+  </NCard>
 </template>
