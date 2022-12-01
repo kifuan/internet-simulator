@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useWindowSize } from '@vueuse/core'
 import { useDialog } from 'naive-ui'
 import { storeToRefs } from 'pinia'
 import { computed, h, onBeforeMount } from 'vue'
@@ -8,8 +9,10 @@ import DialogPanel from './DialogPanel.vue'
 
 const dialog = useDialog()
 const eventStore = useEventStore()
+const { width: windowWidth } = useWindowSize()
 const { historyEvents, currentEvent, formattedDate } = storeToRefs(eventStore)
 const title = computed(() => `事件 #${historyEvents.value.length + 1}`)
+const buttonTextWidth = computed(() => `${windowWidth.value * 0.75}px`)
 
 function handleSelectAction(action: Action) {
   const event = eventStore.getHistoryEvent(action)
@@ -56,7 +59,9 @@ onBeforeMount(() => {
         block
         @click="handleSelectAction(action)"
       >
-        {{ action.text }}
+        <div :style="{ maxWidth: buttonTextWidth }">
+          {{ action.text }}
+        </div>
       </NButton>
     </NSpace>
   </NThing>
