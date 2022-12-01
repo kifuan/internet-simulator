@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+  pull_requests:
+    branches: [master]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        run: curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm@next-7
+
+      - name: Install & Build
+        run: pnpm install && pnpm build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
