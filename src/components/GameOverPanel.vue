@@ -1,16 +1,25 @@
 <script setup lang="ts">
+import { useDialog } from 'naive-ui'
 import { useEventStore } from '../stores/event'
 import { usePropertyStore } from '../stores/property'
 import InteractiveButton from './InteractiveButton.vue'
 
 const propStore = usePropertyStore()
 const eventStore = useEventStore()
+const dialog = useDialog()
 
 function handleAgain() {
-  propStore.$reset()
-  eventStore.$reset()
-
-  eventStore.chooseEvent()
+  dialog.warning({
+    title: '确认',
+    content: '你确认要 Remake 吗？',
+    positiveText: '确认',
+    negativeText: '算了',
+    onPositiveClick: () => {
+      propStore.$reset()
+      eventStore.$reset()
+      eventStore.chooseEvent()
+    },
+  })
 }
 </script>
 
@@ -28,7 +37,7 @@ function handleAgain() {
       </NText>
 
       <InteractiveButton @click="handleAgain">
-        再来一局
+        Remake
       </InteractiveButton>
     </NSpace>
   </NThing>
