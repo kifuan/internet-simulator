@@ -7,7 +7,11 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    DialogHistoryEventPanel: typeof import('./src/components/DialogHistoryEventPanel.vue')['default']
+    DialogAction: typeof import('./src/components/DialogPanel.vue')['default']
+    DialogHistoryEventPanel: typeof import('./src/components/DialogPanel.vue')['default']
+    DialogPanel: typeof import('./src/components/DialogPanel.vue')['default']
+    Effects: typeof import('./src/components/Effects.vue')['default']
+    EffectTags: typeof import('./src/components/EffectTags.vue')['default']
     EventInteractiveItem: typeof import('./src/components/InteractiveEventPanel.vue')['default']
     EventItem: typeof import('./src/components/HistoryEventPanel.vue')['default']
     EventList: typeof import('./src/components/EventList.vue')['default']
@@ -16,7 +20,7 @@ declare module '@vue/runtime-core' {
     HistoryEventList: typeof import('./src/components/EventList.vue')['default']
     HistoryEventListItem: typeof import('./src/components/HistoryEventPanel.vue')['default']
     HistoryEventPanel: typeof import('./src/components/HistoryEventPanel.vue')['default']
-    HistoryEventPanelNoHeader: typeof import('./src/components/DialogHistoryEventPanel.vue')['default']
+    HistoryEventPanelNoHeader: typeof import('./src/components/DialogPanel.vue')['default']
     HistoryEvents: typeof import('./src/components/EventList.vue')['default']
     InteractiveEventPanel: typeof import('./src/components/InteractiveEventPanel.vue')['default']
     NAffix: typeof import('naive-ui')['NAffix']
@@ -40,6 +44,7 @@ declare module '@vue/runtime-core' {
     NText: typeof import('naive-ui')['NText']
     NThing: typeof import('naive-ui')['NThing']
     PropertyPanel: typeof import('./src/components/PropertyPanel.vue')['default']
+    Tags: typeof import('./src/components/Tags.vue')['default']
     Welcome: typeof import('./src/components/Welcome.vue')['default']
   }
 }

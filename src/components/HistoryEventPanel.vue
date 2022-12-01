@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import type { HistoryEvent } from '../stores/event'
+import EffectTags from './EffectTags.vue'
 
 defineProps<{
   event: HistoryEvent
@@ -31,16 +32,7 @@ onMounted(() => {
     </template>
 
     <template #footer>
-      <NSpace size="small">
-        <NTag
-          v-for="(effect, index) in event.actionEffects"
-          :key="index"
-          :type="effect.value > 0 ? 'success' : 'error'"
-          size="small"
-        >
-          {{ effect.text }}
-        </NTag>
-      </NSpace>
+      <EffectTags :effects="event.actionEffects" />
     </template>
 
     <NSpace vertical size="large">
