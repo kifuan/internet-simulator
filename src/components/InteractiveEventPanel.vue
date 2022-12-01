@@ -1,45 +1,64 @@
 <script setup lang="ts">
-import { useWindowSize } from '@vueuse/core'
-import { useDialog } from 'naive-ui'
+import { promiseTimeout, useWindowSize } from '@vueuse/core'
 import { storeToRefs } from 'pinia'
-import { computed, h, onBeforeMount } from 'vue'
+import { computed, onMounted, onUpdated, ref } from 'vue'
 import type { Action } from '../stores/event'
 import { useEventStore } from '../stores/event'
 import { usePropertyStore } from '../stores/property'
-import DialogPanel from './DialogPanel.vue'
 import InteractiveButton from './InteractiveButton.vue'
 
-const dialog = useDialog()
+const emits = defineEmits<{
+  (e: 'update'): void
+}>()
+
+// Fake loading state, which is better than no loading state at all.
+const loading = ref(true)
 const eventStore = useEventStore()
 const propertyStore = usePropertyStore()
 const { width: windowWidth } = useWindowSize()
 const { historyEvents, currentEvent, formattedDate } = storeToRefs(eventStore)
 const title = computed(() => `事件 #${historyEvents.value.length + 1}`)
+const skeletonTitleWidth = computed(() => `${windowWidth.value * 0.3}px`)
+const skeletonDateWidth = computed(() => `${windowWidth.value * 0.2}px`)
 const buttonTextWidth = computed(() => `${windowWidth.value * 0.75}px`)
 
-function handleSelectAction(action: Action) {
-  const event = eventStore.getHistoryEvent(action)
-  dialog.success({
-    title: title.value,
-    content: () => h(DialogPanel, { event }),
-    positiveText: '好好好',
-    maskClosable: false,
-    closable: false,
-    onAfterLeave: () => {
-      eventStore.addHistoryEvent(event)
-      propertyStore.change(action.effect)
-      eventStore.chooseEvent()
-    },
-  })
+async function fakeLoad() {
+  loading.value = true
+  await promiseTimeout(500)
+  loading.value = false
 }
 
-onBeforeMount(() => {
+async function handleSelectAction(action: Action) {
+  const event = eventStore.getHistoryEvent(action)
+  eventStore.addHistoryEvent(event)
+  propertyStore.change(action.effect)
   eventStore.chooseEvent()
+  await fakeLoad()
+}
+
+onMounted(async () => {
+  eventStore.chooseEvent()
+  await fakeLoad()
+})
+
+onUpdated(() => {
+  emits('update')
 })
 </script>
 
 <template>
-  <NThing>
+  <NThing v-if="loading">
+    <template #header>
+      <NSkeleton text :style="{ width: skeletonTitleWidth }" />
+    </template>
+
+    <template #header-extra>
+      <NSkeleton text :style="{ width: skeletonDateWidth }" />
+    </template>
+
+    <NSkeleton text :repeat="3" />
+  </NThing>
+  <NThing v-else>
     <template #header>
       <div class="tw-text-lg">
         {{ title }}

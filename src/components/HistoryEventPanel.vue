@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import type { HistoryEvent } from '../stores/event'
 import EffectTags from './EffectTags.vue'
 
@@ -7,14 +6,6 @@ defineProps<{
   event: HistoryEvent
   id: number
 }>()
-
-const emits = defineEmits<{
-  (e: 'scroll'): void
-}>()
-
-onMounted(() => {
-  emits('scroll')
-})
 </script>
 
 <template>

@@ -14,7 +14,7 @@ const emits = defineEmits<{
 const { historyEvents, gameOver } = storeToRefs(useEventStore())
 const list = ref<InstanceType<typeof NList>>()
 
-function handleScroll() {
+function handleInteractivePanelUpdate() {
   emits('scroll', list.value!.$el.scrollHeight)
 }
 </script>
@@ -29,13 +29,12 @@ function handleScroll() {
       <HistoryEventPanel
         :id="index + 1"
         :event="event"
-        @scroll="handleScroll"
       />
     </NListItem>
 
     <NListItem class="item">
       <GameOverPanel v-if="gameOver" />
-      <InteractiveEventPanel v-else />
+      <InteractiveEventPanel v-else @update="handleInteractivePanelUpdate" />
     </NListItem>
   </NList>
 </template>

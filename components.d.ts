@@ -42,6 +42,7 @@ declare module '@vue/runtime-core' {
     NNumberAnimation: typeof import('naive-ui')['NNumberAnimation']
     NP: typeof import('naive-ui')['NP']
     NScrollbar: typeof import('naive-ui')['NScrollbar']
+    NSkeleton: typeof import('naive-ui')['NSkeleton']
     NSpace: typeof import('naive-ui')['NSpace']
     NTag: typeof import('naive-ui')['NTag']
     NText: typeof import('naive-ui')['NText']
