@@ -41,12 +41,12 @@ export const propertyDescriptions: Record<keyof Property, string> = {
 /**
  * The high property value to be compared when rating.
  */
-const highPropValue = 35
+const highPropValue = 45
 
 /**
  * The low property value to be compared when rating.
  */
-const lowPropValue = 15
+const lowPropValue = 5
 
 /**
  * Strategies to rate the properties.
